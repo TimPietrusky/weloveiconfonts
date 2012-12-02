@@ -240,11 +240,17 @@
     $('.zocial section[data-name="preview"] div').append(iconsView.render().el);
   });
 
+  var iconsCollection4 = new App.Collections.Icons({'family':'fontawesome'});
+  iconsCollection4.fetch().then(function() {
+    var iconsView = new App.Views.Icons({ collection : iconsCollection4 });
+    $('.fontawesome section[data-name="preview"] div').append(iconsView.render().el);
+  });
 
 
   var allIconsCollection = new App.Collections.Creator([
     {"family" : "brandico", "font" : "brandico", "selected" : false},
     {"family" : "entypo", "font" : "entypo", "selected" : false},
+    {"family" : "fontawesome", "font" : "FontAwesome","selected" : false},
     {"family" : "typicons", "font" : "Typicons","selected" : false},
     {"family" : "zocial", "font" : "zocial","selected" : false}
   ]);

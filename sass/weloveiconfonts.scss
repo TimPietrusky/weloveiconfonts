@@ -1,7 +1,7 @@
 /* theme */
 @import "compass/css3/images";
 @import "compass/css3";
-@import url(http://weloveiconfonts.com/api/?family=typicons|brandico|entypo|zocial|iconicfill);
+@import url(http://weloveiconfonts.com/api/?family=typicons|brandico|entypo|zocial|iconicfill|fontawesome);
 @import url(http://fonts.googleapis.com/css?family=Text+Me+One|Chau+Philomene+One|Source+Code+Pro:400);
 
 $bg_body: #333;
@@ -297,6 +297,10 @@ body[data-theme='weloveiconfonts'] {
 
   .entypo {
     font-family:'entypo', sans-serif;
+  }
+
+  .fontawesome {
+    font-family:'FontAwesome', sans-serif;
   }
 
   .iconicfill {
