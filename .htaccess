@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  #RewriteCond %{HTTP_HOST} ^api\.
+  #RewriteCond %{REQUEST_URI} !^/api/$ [NC]
+  #RewriteCond %{REQUEST_FILENAME} !-f
+  #RewriteRule (.*) /api/$1 [L]
+
+  #RewriteCond %{HTTP_HOST} ^/api
+  #RewriteCond %{REQUEST_URI} !/api/$ [NC]
+  #RewriteCond %{REQUEST_FILENAME} !-f
+  #RewriteRule (.*) /api/$1 [L]
+
+</IfModule>
