@@ -23,9 +23,8 @@ body {
 body[data-theme='weloveiconfonts'] {
   font: 1.2em/1.4em "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
   color: rgba(255, 255, 255, .9);  
-
   background-color:$bg_body;
-
+  
   // @include background(
   //   linear-gradient(left, rgba(206, 190, 41, .3) 0%, rgba(155, 31, 80, .3) 33%, rgba(41, 137, 216, .3) 71%, rgba(137, 180, 255, .3) 95%),
   //   linear-gradient(top, rgba(206, 190, 41, .8) 0%, rgba(155, 31, 80, .3) 33%, rgba(41, 137, 216, .7) 71%, rgba(137, 180, 255, .7) 95%),
