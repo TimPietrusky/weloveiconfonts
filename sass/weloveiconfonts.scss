@@ -165,10 +165,10 @@ body[data-theme='weloveiconfonts'] {
   }
 
   article[data-high="5"] {
-    background: rgba(255, 255, 255, .3);
+    background: rgba(56, 188, 98, .4);
     box-shadow:
-      0 -.25em 0 .25em rgba(255, 255, 255, .3),
-      0 .25em 0 .25em rgba(255, 255, 255, .3),
+      0 -.25em 0 .25em rgba(56, 188, 98, .4),
+      0 .25em 0 .25em rgba(56, 188, 98, .4),
       -.45em 0 .45em rgba(0, 0, 0, .2);
     ;
     border-top:.25em dashed $bg_body;
@@ -280,14 +280,16 @@ body[data-theme='weloveiconfonts'] {
           letter-spacing: .15em;
         }
       }
-
-
     }
   }
 
   .typicons {
     font-family:'Typicons', sans-serif;
-    font-size:1.2em;
+
+    [class^="typicons-"], 
+    [class*=" typicons-"] {
+      font-size:1.25em;
+    }
   }
 
   .brandico {
