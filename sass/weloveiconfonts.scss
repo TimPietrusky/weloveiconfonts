@@ -127,7 +127,7 @@ body[data-theme='weloveiconfonts'] {
     color:rgba(0, 0, 0, 0);
     font-size:9em;
     z-index:-1;
-    text-shadow:0 0 .15em rgba(0, 0, 0, .5);
+    text-shadow:0 0 .065em rgba(0, 0, 0, .7);
   }
 
   article[data-high="1"] {
@@ -323,6 +323,11 @@ body[data-theme='weloveiconfonts'] {
 
   article[data-text].entypo:after {
     content:'\e723 \e79b \2692';
+    letter-spacing:.45em;
+  }
+
+  article[data-text].fontawesome:after {
+    content:'\f025 \f075 \f083';
     letter-spacing:.45em;
   }
 
