@@ -190,8 +190,6 @@
       this.collection.each(function(model) {
         model.on('change', this.create, this);
       }, this);
-
-      console.log(this.$el);
     },
 
     create : function(model) {
@@ -213,7 +211,6 @@
       body += "\n}\n\n";
 
       // URL
-      console.log(this.$el);
       this.$el.html(url + body);
     },
   });

@@ -2,7 +2,9 @@
 @import "compass/css3/images";
 @import "compass/css3";
 @import url(http://weloveiconfonts.com/api/?family=typicons|brandico|entypo|zocial|iconicfill);
-@import url(http://fonts.googleapis.com/css?family=Text+Me+One|Chau+Philomene+One);
+@import url(http://fonts.googleapis.com/css?family=Text+Me+One|Chau+Philomene+One|Source+Code+Pro:400);
+
+$bg_body: #333;
 
 html,
 body {
@@ -13,24 +15,26 @@ body {
 * {
   &::-moz-selection,
   &::selection { 
-    color: rgba(0, 0, 0, .8);  
+    color: rgba(0, 0, 0, .9);  
     background: rgba(255, 255, 255, .5); 
   } 
 }
 
 body[data-theme='weloveiconfonts'] {
   font: 1.2em/1.4em "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
-  color: rgba(255, 255, 255, .8);  
+  color: rgba(255, 255, 255, .9);  
 
-  @include background(
-    linear-gradient(left, rgba(206, 190, 41, .3) 0%, rgba(155, 31, 80, .3) 33%, rgba(41, 137, 216, .3) 71%, rgba(137, 180, 255, .3) 95%),
-    linear-gradient(top, rgba(206, 190, 41, .8) 0%, rgba(155, 31, 80, .3) 33%, rgba(41, 137, 216, .7) 71%, rgba(137, 180, 255, .7) 95%),
-    linear-gradient(right, rgba(206, 190, 41, 1) 0%, rgba(155, 31, 80, .6) 33%, rgba(41, 137, 216, 1) 71%, rgba(137, 180, 255, 1) 95%)
-  );
-  background-attachment:fixed;
+  background-color:$bg_body;
+
+  // @include background(
+  //   linear-gradient(left, rgba(206, 190, 41, .3) 0%, rgba(155, 31, 80, .3) 33%, rgba(41, 137, 216, .3) 71%, rgba(137, 180, 255, .3) 95%),
+  //   linear-gradient(top, rgba(206, 190, 41, .8) 0%, rgba(155, 31, 80, .3) 33%, rgba(41, 137, 216, .7) 71%, rgba(137, 180, 255, .7) 95%),
+  //   linear-gradient(right, rgba(206, 190, 41, 1) 0%, rgba(155, 31, 80, .6) 33%, rgba(41, 137, 216, 1) 71%, rgba(137, 180, 255, 1) 95%)
+  // );
+  // background-attachment:fixed;
 
   h1 {
-    font: 3.1em/1.55em 'Text Me One', sans-serif;
+    font: 3.35em/1.55em 'Text Me One', sans-serif;
     letter-spacing:.15em;
     font-variant: small-caps;
     color:rgba(255, 255, 255, .8);
@@ -38,12 +42,16 @@ body[data-theme='weloveiconfonts'] {
   }
 
   h2 {
-    font: 1.65em/1.3em 'Chau Philomene One', sans-serif;
+    font: 1.95em/1.3em 'Chau Philomene One', sans-serif;
     letter-spacing:.05em;
     border-bottom:.05em solid rgba(255, 255, 255, .5);
     padding:0 0 .5em 0;
     margin:.25em 0 .5em 0;
     color: rgba(255, 255, 255, .95);
+
+    > span {
+      font-size:1.2em;
+    }
   }
 
   h3 {
@@ -57,12 +65,15 @@ body[data-theme='weloveiconfonts'] {
   a:visited,
   a:active {
     text-decoration:none;
-    color:rgba(0, 0, 0, .9);
+    color:rgba(255, 255, 255, .9);
+    border-bottom:.1em solid rgba(255, 255, 255, .3);
+    padding-bottom:.15em;
     @include transition(all .3s ease-in-out);
   }
 
   a:hover {
-    color:rgba(255, 255, 255, .8);
+    color:rgba(255, 255, 255, 1);
+    border-bottom:.1em solid rgba(255, 255, 255, .9);
   }
 
   p, ul {
@@ -136,7 +147,6 @@ body[data-theme='weloveiconfonts'] {
     background-attachment:fixed;
 
     padding-bottom:1em;
-    margin-bottom:8em;
     box-shadow:0 .35em .85em rgba(0, 0, 0, .3);
 
     p {
@@ -148,13 +158,21 @@ body[data-theme='weloveiconfonts'] {
     div {
       padding:1.5em 1em;
     }
+
+    a {
+      border:none;
+    }
   }
 
   article[data-high="5"] {
     background: rgba(255, 255, 255, .3);
     box-shadow:
+      0 -.25em 0 .25em rgba(255, 255, 255, .3),
+      0 .25em 0 .25em rgba(255, 255, 255, .3),
       -.45em 0 .45em rgba(0, 0, 0, .2);
     ;
+    border-top:.25em dashed $bg_body;
+    border-bottom:.25em dashed $bg_body;
   }
 
   section {
@@ -191,6 +209,7 @@ body[data-theme='weloveiconfonts'] {
 
   pre,
   textarea {
+    font-family:'Source Code Pro', monospace;
     margin:0;
     background:rgba(255, 255, 255, .3);
     padding:1.75em .5em 0 1em;
@@ -466,9 +485,20 @@ textarea {
   .creator {
     position:fixed;
     width:30%;
-    top:1em;
-    right:1em;
+    top:0;
+    right:0;
     z-index:1;
+    background:rgba(0, 0, 0, .2);
+    @include transition(all .3s ease-in-out);
+
+    &:hover {
+      color: rgba(255, 255, 255, .8);
+      background: rgba(0, 0, 0, .4);
+
+      a {
+        color: inherit;
+      }
+    }
 
     b {
       font-family: 'Text Me One', sans-serif;
@@ -476,23 +506,23 @@ textarea {
 
     a {
       font-size:1.7em;
-      color: rgba(255, 255, 255, .7);
+      color: rgba(255, 255, 255, .5);
       padding:.5em 0 0 0;
       width:50%;
       float:left;
+      border:none;
 
       &:nth-child(2) {
         margin-bottom:.4em;
       }
 
       &:nth-child(3) {
-        border:none;
         border-top:.15em solid rgba(255, 255, 255, .3);
         padding-top:.25;
       }
 
       &:hover {
-        color: rgba(0, 0, 0, .4);
+        color: rgba(255, 255, 255, 1);
       }
     }
 
@@ -500,11 +530,15 @@ textarea {
       opacity:.4;
     }
   }
+
+  .highlight {
+    text-shadow: .05em .05em .05em rgba(0, 0, 0, .2);
+  }
 }
 
 /* big screens */
 @media screen and (max-width: 79em) {
-  body[data-theme='minimal'] {
+  body[data-theme='weloveiconfonts'] {
     section,
     footer {
       padding: 0 0;
@@ -514,9 +548,7 @@ textarea {
 
 /* small screens */
 @media screen and (max-width: 44em) {
-  body[data-theme='minimal'] {
-
-    font-size: 1.6em;
+  body[data-theme='weloveiconfonts'] {
 
     h1,
     article[data-text]:after {
@@ -526,13 +558,28 @@ textarea {
     section > div {
       padding: .5em;
     }
+
+    .creator {
+      width:100%;
+      right:0;
+      top:auto;
+      bottom:0;
+      background:rgba(0, 0, 0, .7);
+
+      textarea {
+
+      }
+
+      a {
+        font-size:1em;
+        vertical-align: bottom;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 66em) {
-  body[data-theme='minimal'] {
-
-    font-size: 1.6em;
+  body[data-theme='weloveiconfonts'] {
 
     h1 {
       font-size:2.3em;

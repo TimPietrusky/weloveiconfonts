@@ -18,6 +18,7 @@
 
   <link rel="stylesheet" href="css/crystallo-min.css">
   <link rel="stylesheet" href="css/weloveiconfonts.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="author" href="https://plus.google.com/u/0/112605782451035737058/posts">
 
 </head>
@@ -33,7 +34,12 @@
         <p>This is like <a href="http://www.google.com/webfonts" target="_blank">Google Web Fonts</a>, but for <b>Open Source Icon Fonts</b>. Hurray! </p>
         <p>This is not like <a href="http://fontello.com/" target="_blank">Fontello</a>, because you <b>can't generate</b> Icon Fonts here.</p>
         <p>Just <b>choose</b> your favorite <b>Icon Fonts</b> and use them on your website. It's really that simple!</p>
-        <p>"Yes" and <a href="#how-to-use">how can I use this?</a></p>
+        <p>"Yes" ok, but <a href="#how-to-use">how does this work?</a></p>
+      </div>
+      
+      <div>
+        <h3>Please note</h3>
+        <p>This is a public beta and I will add more fonts/features in the next days.</p>
       </div>
     </section>
   </article>
@@ -122,7 +128,7 @@
   <article id="output" data-high="5">
     <section data-cols="1">
       <div>
-        <h1>Icon Fonts Collection</h1>
+        <h2><span class="entypo entypo-install highlight"></span> Use selected Icon Fonts</h2>
       </div>
     </section>
     
@@ -139,7 +145,7 @@ Choose your Icon Fonts first!
   <article id="how-to-use" data-high="2" data-text="Help">
     <section data-cols="1">
       <div>
-        <h2>How to use this?</h2>
+        <h2><span class="entypo entypo-info highlight"></span> How does this work?</h2>
         <p>3 simple steps to get you into business!</p>
       </div>
     </section>
@@ -167,7 +173,7 @@ Choose your Icon Fonts first!
         </pre>
       </div>
       <div>
-        <h3>4. Burn baby, burn!</h3>
+        <h3>3. Burn baby, burn!</h3>
         
         <pre data-type="1">
 &lt;!-- Single Element -->
@@ -204,6 +210,7 @@ Choose your Icon Fonts first!
     </section>
   </article>
   
+<!-- Top & Handcrafted -->
   <article data-high="3">
     <section data-cols="1">
       <div>
@@ -229,13 +236,13 @@ Choose your Icon Fonts first!
   <script id="creatorTemplate" type="text/template">
     <section data-cols="2">
       <div style="width:20%">
-        <a href="#weloveiconfonts"><span class="plain">0</span></a>
-        <a href="#output" class="entypo entypo-install"></a>
-        <a href="#how-to-use" class="typicons typicons-unknown"></a>
+        <a href="#weloveiconfonts" title="# of selected fonts"><span class="plain">0</span></a>
+        <a href="#output" class="entypo entypo-install" title="Use selected fonts"></a>
+        <a href="#how-to-use" class="entypo entypo-info" title="How does this work?"></a>
       </div>
       <div style="width:80%">
         <b>We <span class="typicons typicons-heart"></span> Icon Fonts</b> 
-        <textarea data-name="text" data-type="4" spellcheck="false"></textarea>
+        <textarea data-name="text" data-type="4" spellcheck="false" readonly="true" title="icon-class-preview"></textarea>
       </div>
     </section>
   </script>
