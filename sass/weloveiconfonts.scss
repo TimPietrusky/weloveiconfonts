@@ -283,6 +283,11 @@ body[data-theme='weloveiconfonts'] {
     }
   }
 
+  li.active {
+    background: rgba(0, 0, 0, .5);
+    @include transition(all .25s ease-out);
+  }
+
   .typicons {
     font-family:'Typicons', sans-serif;
 

@@ -66,7 +66,6 @@
     tagName : 'ul',
 
     initialize : function() {
-      // this.collection.on('add', this.addOne, this);
     },
 
     render : function() {
@@ -94,6 +93,9 @@
 
     clicked : function() {
       vent.trigger("iconClicked", {'class' : this.$el.attr('class')});
+
+      $(this.el.parentElement).find('li.active').removeClass('active');
+      this.$el.addClass('active');
     },
 
     render : function() {
@@ -147,6 +149,7 @@
 
     addClicked : function(el) {
 
+
       var data = el.attr('data-collection');
 
       if (!el.attr('disabled')) {
@@ -154,6 +157,8 @@
       
         // Change type and add another text
         el.attr('data-type', '4');
+
+        // The "everything ok" aka "check" icon
         el.html('<span class="entypo entypo-check"></span>');
 
         _(this.collection.models).each(function(asdf) {
@@ -264,4 +269,3 @@
   $('section[data-name="output"] div').append(outputView.render().el);
 
 })();
-
