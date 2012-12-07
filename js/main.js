@@ -16,18 +16,25 @@
    * Models 
    */
   App.Models.Icon = Backbone.Model.extend({
+    initialize : function() {
+
+    },
+
+    /**
+     * Update and extend the data of the model. 
+     */
+    update : function() {
+      var normal_name = this.get('name').split('-');
+      normal_name = normal_name.slice(1, (normal_name.length)).join('-');
+
+      // The name without the font-prefix
+      this.set('normal-name', normal_name);
+    }
   });
 
   App.Models.Creator = Backbone.Model.extend({
   });
 
-  // App.Models.Task = Backbone.Model.extend({
-  //   validate : function(attributes) {
-  //     if (!$.trim(attributes.title)) {
-  //       return 'A task requires a title';
-  //     }
-  //   }
-  // });
 
   /***************************************************
    *
@@ -68,6 +75,7 @@
     },
 
     addOne : function(icon) {
+      icon.update();
       var iconView = new App.Views.Icon({model : icon});
       this.$el.append(iconView.render().el);
     }
@@ -79,11 +87,6 @@
   App.Views.Icon = Backbone.View.extend({
     tagName : 'li',
     template : template('iconTemplate'),
-
-    initialize : function() {
-      // this.model.on('change', this.render, this);
-      // this.model.on('destroy', this.remove, this);
-    },
 
     events : {
       'click' : 'clicked'
@@ -99,7 +102,7 @@
       // Set class
       this.$el.attr('class', this.model.get('name'));
       // Set title
-      this.$el.attr('data-text', this.model.get('name'));
+      this.$el.attr('data-text', this.model.get('normal-name'));
 
       this.$el.html(template);
       return this;
@@ -125,7 +128,6 @@
         model.on('change', this.counter, this);
       }, this);
 
-      // $('.creator plain').html(1);
       $('article button.add').on('click', function(e) {
         vent.trigger("addClicked", $(e.currentTarget));
       });

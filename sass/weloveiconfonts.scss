@@ -193,8 +193,10 @@ body[data-theme='weloveiconfonts'] {
 
   section[data-name='preview'] {
     padding-bottom:1.85em;
-    max-height:22em;
-    overflow-y:auto;
+
+    // Small mode (@TODO: [TimPietrusky] - Minimal list view)
+    // max-height:12em;
+    // overflow-y:auto;
   }
 
   section[data-name='output'] {
@@ -261,22 +263,21 @@ body[data-theme='weloveiconfonts'] {
 
       &:hover {
         cursor:pointer;
-        box-shadow: 
-          inset 0 0 0 5em rgba(0, 0, 0, .9)
-        ;
         padding:.5em;
         @include transform(scale(1.5, 1.5));
-        z-index:1338;
+        z-index:2;
 
         &:after {
           position:absolute;
-          bottom:-.5em;
-          right:.5em;
+          bottom:-2em;
+          right:1.5em;
+          min-height:2em;
           content:attr(data-text);
           background:rgba(0, 0, 0, .6);
-          padding:.25em;
-          font: .45em 'Chau Philomene One', sans-serif;
+          padding:.35em;
+          font: .55em 'Chau Philomene One', sans-serif;
           letter-spacing: .15em;
+          vertical-align: middle;
         }
       }
     }
@@ -500,10 +501,12 @@ textarea {
     z-index:1;
     background:rgba(0, 0, 0, .2);
     @include transition(all .3s ease-in-out);
+    opacity:.5;
 
     &:hover {
       color: rgba(255, 255, 255, .8);
       background: rgba(0, 0, 0, .4);
+      opacity: 1;
 
       a {
         color: inherit;
@@ -538,6 +541,9 @@ textarea {
 
     textarea {
       opacity:.4;
+      font-size:1em;
+      line-height:.75em;
+      padding: 1.05em .75em .75em .75em;
     }
   }
 
