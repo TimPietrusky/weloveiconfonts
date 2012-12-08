@@ -504,17 +504,24 @@ textarea {
     top:0;
     right:0;
     z-index:1;
-    background:rgba(0, 0, 0, .2);
-    @include transition(all .3s ease-in-out);
-    opacity:.5;
+    background:rgba(0, 0, 0, .1);
+    color:rgba(255, 255, 255, .7);
+    @include transition(all .35s ease-in-out);
+
+    section > div:nth-child(1) {
+      width:20%;
+    }
+
+    section > div:nth-child(2) {
+      width: 80%;
+    }
 
     &:hover {
-      color: rgba(255, 255, 255, .8);
-      background: rgba(0, 0, 0, .4);
-      opacity: 1;
+      background:rgba(0, 0, 0, .9);
+      color: rgba(255, 255, 255, 1);
 
       a {
-        color: inherit;
+         color: rgba(255, 255, 255, 1);
       }
     }
 
@@ -524,7 +531,7 @@ textarea {
 
     a {
       font-size:1.7em;
-      color: rgba(255, 255, 255, .5);
+      color: inherit;
       padding:.5em 0 0 0;
       width:50%;
       float:left;
@@ -562,13 +569,13 @@ textarea {
   body[data-theme='weloveiconfonts'] {
     section,
     footer {
-      padding: 0 0;
+      padding: 0 .75em;
     }
   }
 }
 
 /* small screens */
-@media screen and (max-width: 44em) {
+@media screen and (max-width: 66em) {
   body[data-theme='weloveiconfonts'] {
 
     h1,
@@ -576,30 +583,23 @@ textarea {
       font-size:2.3em;
     }
 
-    section > div {
-      padding: .5em;
-    }
+    ul {
+      padding:0;
 
-    .creator {
-      width:100%;
-      right:0;
-      top:auto;
-      bottom:0;
-      background:rgba(0, 0, 0, .7);
+      li {
+        padding:.5em 2em;
+        width:25%;
+        font-size:1.25em;
 
-      a {
-        font-size:1em;
-        vertical-align: bottom;
+        &:hover {
+          @include transform(none);
+          padding:.5em 2em;
+        }
       }
     }
-  }
-}
 
-@media screen and (max-width: 66em) {
-  body[data-theme='weloveiconfonts'] {
-
-    h1 {
-      font-size:2.3em;
+    section > div {
+      padding: 0 .5em;
     }
 
     .creator {
@@ -607,11 +607,40 @@ textarea {
       right:0;
       top:auto;
       bottom:0;
-      padding:0 1em;
       background:rgba(0, 0, 0, .7);
+      font-size:.85em;
+
+      section > div:nth-child(1) {
+        width:100%;
+
+        a {
+          width:33%;
+          line-height:2.25em;
+          max-height:2.25em;
+          border:none;
+          text-align: center;
+          padding:0;
+          border-right:.15em solid rgba(255, 255, 255, .3);
+
+          &:nth-child(2) {
+            margin:0;
+          }
+
+          &:nth-child(3) {
+            border:none;
+          }
+        }
+      }
+
+      section > div:nth-child(2) {
+        width: 100%;
+      }
+
+      section > div:nth-child(2) b[title] {
+        display: none;
+      }
 
       a {
-        font-size:1em;
         vertical-align: bottom;
       }
     }
