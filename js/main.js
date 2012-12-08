@@ -123,6 +123,7 @@
     collected : '',
 
     initialize : function() {
+      // Liste
       vent.bind("iconClicked", this.iconClicked, this);
       vent.bind("addClicked", this.addClicked, this);
 
@@ -133,6 +134,10 @@
       $('article button.add').on('click', function(e) {
         vent.trigger("addClicked", $(e.currentTarget));
       });
+    },
+
+    events : {
+      'click a' : 'scrollTo'
     },
 
     iconClicked : function(data) {
@@ -148,8 +153,6 @@
     },
 
     addClicked : function(el) {
-
-
       var data = el.attr('data-collection');
 
       if (!el.attr('disabled')) {
@@ -174,6 +177,17 @@
     counter : function() {
       var counter = $('.creator .plain');
       counter.html(parseInt(counter.html()) + 1);
+    }
+,
+    /**
+     * Scroll to a element because the default
+     * href="#" + id doesn't work on mobile browsers.
+     */
+    scrollTo : function(e) {
+      var jump = $(e.currentTarget).attr('href');
+      var new_position = $(jump).offset();
+      window.scrollTo(new_position.left, new_position.top);
+      return false;
     },
 
     render : function() {
