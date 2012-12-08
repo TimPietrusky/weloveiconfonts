@@ -79,6 +79,13 @@ body[data-theme='weloveiconfonts'] {
     margin:.25em 0 .45em 0;
   }
 
+  hr {
+    background:none;
+    border:none;
+    border-bottom:0.15em  solid rgba(255, 255, 255, .2);
+    margin:2.15em 0 1.75em 0;
+  }
+
   button[data-width="50"] {
     width:50%;
   }
@@ -288,33 +295,34 @@ body[data-theme='weloveiconfonts'] {
     @include transition(all .25s ease-out);
   }
 
-  .typicons {
+  [class^="typicons-"]:before, [class*=" typicons-"]:before {
     font-family:'Typicons', sans-serif;
-
-    [class^="typicons-"], 
-    [class*=" typicons-"] {
-      font-size:1.25em;
-    }
+    font-size:1.25em;
   }
 
-  .brandico {
+  [class^="brandico-"]:before, [class*=" brandico-"]:before {
     font-family:'brandico', sans-serif;
   }
 
-  .entypo {
+  [class^="entypo-"]:before, [class*=" entypo-"]:before {
     font-family:'entypo', sans-serif;
   }
 
-  .fontawesome {
+  [class^="fontawesome-"]:before, [class*=" fontawesome-"]:before {
     font-family:'FontAwesome', sans-serif;
   }
 
-  .iconicfill {
+  [class^="iconicfill-"]:before, [class*=" iconicfill-"]:before {
     font-family:'IconicFill', sans-serif;
   }
 
-  .zocial {
+  [class^="zocial-"]:before, [class*=" zocial-"]:before {
     font-family:'zocial', sans-serif;
+  }
+
+  .example {
+    font-size:2.5em;
+    line-height:1.5em;
   }
 
   .meta {

@@ -168,7 +168,7 @@
         // Change type
         el.attr('data-type', '3');
         // Change the text
-        el.html('<span class="fontawesome fontawesome-remove"></span> Remove From Collection');
+        el.html('<span class="fontawesome-remove"></span> Remove From Collection');
 
         _(this.collection.models).each(function(asdf) {
           if (asdf.get('family') == data) {
@@ -182,7 +182,7 @@
         // Change type
         el.attr('data-type', '2');
         // Change the text
-        el.html('<span class="fontawesome fontawesome-plus"></span> Add To Collection');
+        el.html('<span class="fontawesome-plus"></span> Add To Collection');
 
         _(this.collection.models).each(function(asdf) {
           if (asdf.get('family') == data) {
@@ -237,7 +237,7 @@
 
     create : function(model) {
       var url = "@import url(http://weloveiconfonts.com/api/?family=",
-          body = "body {",
+          body = "",
           count = 0;
 
       this.collection.each(function(model) {
@@ -246,12 +246,15 @@
             url += "|";
           }
           url += model.get('family');
-          body += "\n  font-family: '" + model.get('font') + "', sans-serif;"
+
+          body += "/* " + model.get('family') + " */\n"+
+            "[class^=\"" + model.get('family') + "-\"]:before, \n[class*=\"" + model.get('family') + "-\"]:before {"+
+            "\n  font-family: '" + model.get('font') + "', sans-serif;"+
+            "\n}\n\n";
         }
       }, this);
 
       url += ");\n\n";
-      body += "\n}\n\n";
 
       // URL
       this.$el.html(url + body);
