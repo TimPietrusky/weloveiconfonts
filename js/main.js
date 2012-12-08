@@ -156,7 +156,7 @@
     /**
      * Handle add / remove icon font to the collection
      * 
-     * default : 'add to collection'
+     * default : 'Add To Collection'
      *
      * [TimPietrusky] #6: Give the ability to remove fonts from collection. 
      */
@@ -168,7 +168,7 @@
         // Change type
         el.attr('data-type', '3');
         // Change the text
-        el.html('<span class="fontawesome fontawesome-remove"></span> remove from collection');
+        el.html('<span class="fontawesome fontawesome-remove"></span> Remove From Collection');
 
         _(this.collection.models).each(function(asdf) {
           if (asdf.get('family') == data) {
@@ -177,12 +177,12 @@
           }
         }, this);
 
-      // Add to collection
+      // Add To Collection
       } else if (el.attr('data-type') == 3) {
         // Change type
         el.attr('data-type', '2');
         // Change the text
-        el.html('<span class="fontawesome fontawesome-plus"></span> add to collection');
+        el.html('<span class="fontawesome fontawesome-plus"></span> Add To Collection');
 
         _(this.collection.models).each(function(asdf) {
           if (asdf.get('family') == data) {
