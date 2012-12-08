@@ -558,6 +558,11 @@ textarea {
 
       a {
          color: rgba(255, 255, 255, 1);
+         border-right:.15em solid rgba(255, 255, 255, .95);
+      }
+
+      textarea {
+        background: rgba(255, 255, 255, .95);
       }
     }
 
@@ -588,6 +593,8 @@ textarea {
       font-size:.55em;
       line-height:.75em;
       padding: .5em .25em 0 .25em;
+
+      @include transition(background .25s ease-in-out);
     }
   }
 
