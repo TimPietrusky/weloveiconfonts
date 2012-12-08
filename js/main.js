@@ -46,6 +46,10 @@
 
     initialize : function(attr) {
       this.url += attr.family;
+    },
+
+    toggleView : function() {
+      console.log(this);
     }
   });
 
@@ -138,7 +142,8 @@
     },
 
     events : {
-      'click a' : 'scrollTo'
+      'click a' : 'scrollTo',
+      'click .toggle' : 'toggleView'
     },
 
     iconClicked : function(data) {
@@ -206,9 +211,35 @@
      */
     scrollTo : function(e) {
       var jump = $(e.currentTarget).attr('href');
-      var new_position = $(jump).offset();
-      window.scrollTo(new_position.left, new_position.top);
-      return false;
+
+      if (jump != '#') {
+        var new_position = $(jump).offset();
+        window.scrollTo(new_position.left, new_position.top);
+        return false;
+      }
+    },
+
+    /**
+     * Toggle between full & minimal view for the icons. 
+     */
+    toggleView : function(e) {
+      e.preventDefault();
+
+      var icon_lists = $('section[data-name="preview"]'),
+          el = $(e.currentTarget);
+
+      // Full view
+      if (icon_lists.hasClass('minimal')) {
+        icon_lists.removeClass('minimal');
+        el.removeClass('entypo-plus-squared');
+        el.addClass('entypo-minus-squared');
+
+      // Minimal view
+      } else {
+        icon_lists.addClass('minimal');
+        el.removeClass('entypo-minus-squared');
+        el.addClass('entypo-plus-squared');
+      }
     },
 
     render : function() {
@@ -235,7 +266,7 @@
     },
 
     create : function(model) {
-      var url = "@import url(http://weloveiconfonts.com/api/?family=",
+      var url = "@import url(<span class=\"url\">http://weloveiconfonts.com/api/?family=",
           link = "&lt;link href='http://weloveiconfonts.com/api/?family='",
           body = "",
           count = 0;
@@ -247,14 +278,14 @@
           }
           url += model.get('family');
 
-          body += "/* " + model.get('family') + " */\n"+
+          body += "<span>/* " + model.get('family') + " */</span>\n"+
             "[class^=\"" + model.get('family') + "-\"]:before, \n[class*=\"" + model.get('family') + "-\"]:before {"+
             "\n  font-family: '" + model.get('font') + "', sans-serif;"+
             "\n}\n\n";
         }
       }, this);
 
-      url += ");\n\n";
+      url += "</span>);\n\n";
       link += "\n\ rel='stylesheet' type='text/css'>";
 
       // URL

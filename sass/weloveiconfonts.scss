@@ -202,8 +202,10 @@ body[data-theme='weloveiconfonts'] {
     padding-bottom:1.85em;
 
     // Small mode (@TODO: [TimPietrusky] - Minimal list view)
-    // max-height:12em;
-    // overflow-y:auto;
+    &.minimal {
+      max-height:7.25em;
+      overflow-y:auto;
+    }
   }
 
   section[data-name='output'] {
@@ -227,11 +229,11 @@ body[data-theme='weloveiconfonts'] {
 
     &[data-type="1"]:hover,
     &[data-type="3"]:hover {
-        box-shadow:none;
-        @include transform(translate3d(
-           -6px, 6px, 0
-        ));
-      }
+      box-shadow:none;
+      @include transform(translate3d(
+        -6px, 6px, 0
+      ));
+    }
   }
 
   .plain {
@@ -242,6 +244,15 @@ body[data-theme='weloveiconfonts'] {
 
   pre {
     background: rgba(255, 255, 255, .5); 
+
+    span {
+      color:rgba(120, 0, 120, .9);
+      font-weight:bold;
+
+      &.url {
+        color:rgba(180, 80, 0, .9);
+      }
+    }
   }
 
   pre[data-text] {
@@ -517,9 +528,13 @@ textarea {
     @include transition(all .35s ease-in-out);
     font-size: 2.1em;
 
-    section > div {
-      width:100%;
-      padding: 0;
+    section {
+      padding:0;
+
+      > div {
+        width:100%;
+        padding: 0;
+      }
     }
 
     &:hover {
@@ -547,6 +562,10 @@ textarea {
 
       &:hover {
         color: rgba(255, 255, 255, 1);
+      }
+
+      &:last-child {
+        border:none;
       }
     }
 
@@ -618,31 +637,11 @@ textarea {
         background:rgba(255, 255, 255, .6);
       }
 
-      section > div:nth-child(1) {
-        width:100%;
-
-        a {
-          width:33%;
-          padding:0;
-          display:inline-block;
-
-          &:nth-child(2) {
-            margin:0;
-          }
-
-          &:nth-child(3) {
-            border:none;
-          }
-        }
-      }
-
+      section > div:nth-child(1),
       section > div:nth-child(2) {
-        width: 100%;
+        width:100%;
       }
 
-      section > div:nth-child(2) b[title] {
-        display: none;
-      }
 
       a {
         vertical-align: bottom;

@@ -23,8 +23,8 @@
 
 </head>
 
-<body data-max-width="1024" data-theme="weloveiconfonts" data-auto-extend="true">
-  <div id="weloveiconfonts">
+<body id="weloveiconfonts" data-max-width="1024" data-theme="weloveiconfonts" data-auto-extend="true">
+
   <article data-high="1">
     <section data-cols="1">
       <div>
@@ -183,15 +183,15 @@ Pro tip: Select some icon fonts to the see real output here!
         
         <h3>2. Import the icon fonts(s) into your css and add the font-family('s):</h3>
         <pre data-type="1">
-@import url(http://weloveiconfonts.com/api/?family=typicons|brandico);
+@import url(<span class="url">http://weloveiconfonts.com/api/?family=typicons|brandico</span>);
 
-/* brandico */
+<span>/* brandico */</span>
 [class^="brandico-"]:before, 
 [class*="brandico-"]:before {
   font-family: 'brandico', sans-serif;
 }
 
-/* typicons */
+<span>/* typicons */</span>
 [class^="typicons-"]:before, 
 [class*="typicons-"]:before {
   font-family: 'Typicons', sans-serif;
@@ -202,7 +202,7 @@ Pro tip: Select some icon fonts to the see real output here!
         <h3>3. Burn baby, burn!</h3>
         
         <pre data-type="1">
-&lt;!-- Single Element -->
+<span>&lt;!-- Single Element --></span>
 &lt;span class="typicons-puzzle"></span>
         </pre>
         
@@ -213,7 +213,7 @@ Pro tip: Select some icon fonts to the see real output here!
       
       <div>
         <pre data-type="1">
-&lt;!-- Group of Elements -->
+<span>&lt;!-- Group of Elements --></span>
 &lt;ul>
   &lt;li class="brandico-twitter-bird">&lt;/li>
   &lt;li class="brandico-odnoklassniki">&lt;/li>
@@ -280,7 +280,6 @@ Pro tip: Select some icon fonts to the see real output here!
       </div>
     </section>
   </article>  
-  </div>
 
   <script id="iconTemplate" type="text/template"></script>
 
@@ -288,8 +287,9 @@ Pro tip: Select some icon fonts to the see real output here!
     <section data-cols="2">
       <div>
         <a href="#brandico" title="# of selected fonts" class="plain">0</a>
-        <a href="#output" class="entypo entypo-install" title="Use selected fonts"></a>
-        <a href="#how-to-use" class="entypo entypo-info" title="How does this work?"></a>
+        <a href="#output" class="entypo-install" title="Use selected fonts"></a>
+        <a href="#" class="entypo-minus-squared toggle" title="Toggle view: full/minimal"></a>
+        <a href="#how-to-use" class="entypo-info" title="How does this work?"></a>
       </div>
       <div>
         <textarea contenteditable data-name="text" data-type="4" spellcheck="false" title="iconfont-class"></textarea>
