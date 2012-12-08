@@ -344,16 +344,30 @@ body[data-theme='weloveiconfonts'] {
   article[data-text].brandico:after {
     content:'\f308 \f303 \f300';
     letter-spacing:.45em;
+    font-family:'brandico', sans-serif;
   }
 
   article[data-text].entypo:after {
     content:'\e723 \e79b \2692';
     letter-spacing:.45em;
+    font-family:'entypo', sans-serif;
   }
 
   article[data-text].fontawesome:after {
     content:'\f025 \f075 \f083';
     letter-spacing:.45em;
+    font-family:'FontAwesome', sans-serif;
+  }
+
+  article[data-text].typicons:after {
+    content:'A B C';
+    font-family:'Typicons', sans-serif;
+  }
+
+  article[data-text].zocial:after {
+    content:'A B C';
+    letter-spacing:.25em;
+    font-family:'zocial', sans-serif;
   }
 
   ul {
