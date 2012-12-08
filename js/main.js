@@ -161,6 +161,7 @@
      * [TimPietrusky] #6: Give the ability to remove fonts from collection. 
      */
     addClicked : function(el) {
+      console.log('test');
       var data = el.attr('data-collection');
 
       // Remove from collection
@@ -196,7 +197,6 @@
     },
 
     counter : function() {
-      console.log(this.selected);
       var counter = $('.creator .plain');
       counter.html(this.selected);
     }
@@ -237,6 +237,7 @@
 
     create : function(model) {
       var url = "@import url(http://weloveiconfonts.com/api/?family=",
+          link = "&lt;link href='http://weloveiconfonts.com/api/?family='",
           body = "",
           count = 0;
 
@@ -255,6 +256,7 @@
       }, this);
 
       url += ");\n\n";
+      link += "\n\ rel='stylesheet' type='text/css'>";
 
       // URL
       this.$el.html(url + body);
