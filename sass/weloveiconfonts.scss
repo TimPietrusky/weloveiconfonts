@@ -593,6 +593,10 @@ textarea {
       padding: 0 .5em;
     }
 
+    article[data-high="3"] {
+      min-height:15em;
+    }
+
     .creator {
       width:100%;
       right:0;
