@@ -130,7 +130,7 @@ body[data-theme='weloveiconfonts'] {
     text-shadow:0 0 .065em rgba(0, 0, 0, .7);
   }
 
-  article[data-high="1"] {
+  article[data-high="1"] {y
     p {
       font: 1.2em/1.75em 'Text Me One', sans-serif;
     }
@@ -230,7 +230,7 @@ body[data-theme='weloveiconfonts'] {
   .plain {
     width:100%;
     display:block;
-    font: 2.1em/1.25em 'Text Me One', sans-serif;
+    font-family: 'Text Me One', sans-serif;
   }
 
   pre {
@@ -507,13 +507,11 @@ textarea {
     background:rgba(0, 0, 0, .1);
     color:rgba(255, 255, 255, .7);
     @include transition(all .35s ease-in-out);
+    font-size: 2.1em;
 
-    section > div:nth-child(1) {
-      width:20%;
-    }
-
-    section > div:nth-child(2) {
-      width: 80%;
+    section > div {
+      width:100%;
+      padding: 0;
     }
 
     &:hover {
@@ -530,21 +528,14 @@ textarea {
     }
 
     a {
-      font-size:1.7em;
       color: inherit;
-      padding:.5em 0 0 0;
-      width:50%;
+      width:25%;
       float:left;
+      line-height:2.25em;
+      max-height:2.25em;
+      text-align: center;
       border:none;
-
-      &:nth-child(2) {
-        margin-bottom:.4em;
-      }
-
-      &:nth-child(3) {
-        border-top:.15em solid rgba(255, 255, 255, .3);
-        padding-top:.25;
-      }
+      border-right:.15em solid rgba(255, 255, 255, .4);
 
       &:hover {
         color: rgba(255, 255, 255, 1);
@@ -607,20 +598,20 @@ textarea {
       right:0;
       top:auto;
       bottom:0;
-      background:rgba(0, 0, 0, .7);
-      font-size:.85em;
+      background:rgba(0, 0, 0, .8);
+      font-size:1.25em;
+
+      textarea {
+        font-size: .65em;
+        background:rgba(255, 255, 255, .6);
+      }
 
       section > div:nth-child(1) {
         width:100%;
 
         a {
           width:33%;
-          line-height:2.25em;
-          max-height:2.25em;
-          border:none;
-          text-align: center;
           padding:0;
-          border-right:.15em solid rgba(255, 255, 255, .3);
 
           &:nth-child(2) {
             margin:0;
