@@ -117,6 +117,7 @@
   App.Views.Creator = Backbone.View.extend({
     tagName : 'div',
     className : 'creator',
+    selected : 0,
 
     template : template('creatorTemplate'),
     preview : '',
@@ -152,21 +153,41 @@
       });
     },
 
+    /**
+     * Handle add / remove icon font to the collection
+     * 
+     * default : 'add to collection'
+     *
+     * [TimPietrusky] #6: Give the ability to remove fonts from collection. 
+     */
     addClicked : function(el) {
       var data = el.attr('data-collection');
 
-      if (!el.attr('disabled')) {
-        el.attr('disabled', "disabled")
-      
-        // Change type and add another text
-        el.attr('data-type', '4');
-
-        // The "everything ok" aka "check" icon
-        el.html('<span class="entypo entypo-check"></span>');
+      // Remove from collection
+      if (el.attr('data-type') == 2) {
+        // Change type
+        el.attr('data-type', '3');
+        // Change the text
+        el.html('<span class="fontawesome fontawesome-remove"></span> remove from collection');
 
         _(this.collection.models).each(function(asdf) {
-          if (asdf.get('family') == data && asdf.get('selected') == false) {
+          if (asdf.get('family') == data) {
+            ++this.selected;
             asdf.set('selected', true);
+          }
+        }, this);
+
+      // Add to collection
+      } else if (el.attr('data-type') == 3) {
+        // Change type
+        el.attr('data-type', '2');
+        // Change the text
+        el.html('<span class="fontawesome fontawesome-plus"></span> add to collection');
+
+        _(this.collection.models).each(function(asdf) {
+          if (asdf.get('family') == data) {
+            --this.selected;
+            asdf.set('selected', false);
           }
         }, this);
       }
@@ -175,8 +196,9 @@
     },
 
     counter : function() {
+      console.log(this.selected);
       var counter = $('.creator .plain');
-      counter.html(parseInt(counter.html()) + 1);
+      counter.html(this.selected);
     }
 ,
     /**
