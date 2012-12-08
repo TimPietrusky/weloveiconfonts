@@ -161,7 +161,6 @@
      * [TimPietrusky] #6: Give the ability to remove fonts from collection. 
      */
     addClicked : function(el) {
-      console.log('test');
       var data = el.attr('data-collection');
 
       // Remove from collection
