@@ -12,4 +12,8 @@ Just choose your favorite Icon Fonts and use them on your website. It's really t
 
 Please help me find bugs and stuff!
 
+## It's optimized for "small" screens
+
+![We Love Icon Fonts - Optimized for small screens](http://weloveiconfonts.com)
+
 #### Handcrafted 2012 by [@TimPietrusky](http://twitter.com/TimPietrusky) in Germany.
