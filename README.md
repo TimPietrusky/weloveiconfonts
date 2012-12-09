@@ -14,6 +14,6 @@ Please help me find bugs and stuff!
 
 ## It's optimized for "small" screens
 
-![We Love Icon Fonts - Optimized for small screens](http://weloveiconfonts.com)
+![We Love Icon Fonts - Optimized for small screens](https://raw.github.com/TimPietrusky/weloveiconfonts/master/img/weloveiconfonts_dribbble.jpg)
 
 #### Handcrafted 2012 by [@TimPietrusky](http://twitter.com/TimPietrusky) in Germany.
