@@ -356,6 +356,19 @@ body[data-theme='weloveiconfonts'] {
     font-family:'FontAwesome', sans-serif;
   }
 
+  article[data-high="1"].fontawesome:after {
+    position:fixed;
+    width:100%;
+    z-index:-1;
+    top:.5em;
+    content:'\f004 \A \f08a \A \f005';
+    font: 20em/.85em 'FontAwesome', sans-serif;
+    color:rgba(0, 0, 0, .3);
+    text-shadow:0 0 .025em rgba(200, 200, 200, .1);
+    letter-spacing:.45em;
+    text-align:center;
+  }
+
   article[data-text].typicons:after {
     content:'A B C';
     font-family:'Typicons', sans-serif;
