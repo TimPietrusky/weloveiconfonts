@@ -161,7 +161,7 @@
     /**
      * Handle add / remove icon font to the collection
      * 
-     * default : 'Add To Collection'
+     * default : ' To Collection'
      *
      * [TimPietrusky] #6: Give the ability to remove fonts from collection. 
      */
@@ -173,12 +173,12 @@
       //   this.iconfonts = $('.creator .iconfonts a');
       // }
 
-      // Remove from collection
+      //  Remove From collection
       if (el.attr('data-type') == 2) {
         // Change type
         el.attr('data-type', '3');
         // Change the text
-        el.html('<span class="fontawesome-remove"></span> Remove From Collection');
+        el.html('<span class="fontawesome-remove"></span>  From Collection');
 
         _(this.collection.models).each(function(asdf) {
           if (asdf.get('family') == data) {
@@ -189,12 +189,12 @@
           }
         }, this);
 
-      // Add To Collection
+      //  To Collection
       } else if (el.attr('data-type') == 3) {
         // Change type
         el.attr('data-type', '2');
         // Change the text
-        el.html('<span class="fontawesome-heart"></span> Add To Collection');
+        el.html('<span class="fontawesome-heart"></span>  To Collection');
 
         _(this.collection.models).each(function(asdf) {
           if (asdf.get('family') == data) {

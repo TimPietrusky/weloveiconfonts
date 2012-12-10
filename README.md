@@ -18,7 +18,7 @@ Please help me find bugs and stuff!
 
 ## Sub Navigation to jump to specific icon font
 
-![We Love Icon Fonts - Sub Navigation to jump to specific icon font](https://raw.github.com/TimPietrusky/weloveiconfonts/master/img/weloveiconfonts_dribbble_iconfont_nav)
+![We Love Icon Fonts - Sub Navigation to jump to specific icon font](https://raw.github.com/TimPietrusky/weloveiconfonts/master/img/weloveiconfonts_dribbble_iconfont_nav.jpg)
 
 
 ## Thanks to my crowd of testers/contributors/issue-posters
