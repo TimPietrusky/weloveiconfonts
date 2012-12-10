@@ -596,7 +596,7 @@ textarea {
       }
 
       &:last-child {
-        border:none;
+        border-right:none;
       }
     }
 
@@ -605,6 +605,23 @@ textarea {
         a {
           width:20%;
           font-size:.65em;
+          position:relative;
+
+          &.active {
+            background: rgba(188, 56, 98, .3);
+
+            &:after {
+              position:absolute;
+              right:.15em;
+              top:.45em;
+              content:'\f004';
+              font: .75em/.85em 'FontAwesome', sans-serif;
+              color:rgba(188, 56, 68, .7);
+              text-shadow:0 0 .025em rgba(200, 200, 200, .1);
+              letter-spacing:.45em;
+              text-align:right;
+            }
+          }
         }
       }
     }

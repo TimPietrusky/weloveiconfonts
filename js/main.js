@@ -49,7 +49,6 @@
     },
 
     toggleView : function() {
-      console.log(this);
     }
   });
 
@@ -126,6 +125,7 @@
     template : template('creatorTemplate'),
     preview : '',
     collected : '',
+    iconfonts : undefined,
 
     initialize : function() {
       // Liste
@@ -168,6 +168,11 @@
     addClicked : function(el) {
       var data = el.attr('data-collection');
 
+      // Sub navigation
+      // if (this.iconfonts == undefined) {
+      //   this.iconfonts = $('.creator .iconfonts a');
+      // }
+
       // Remove from collection
       if (el.attr('data-type') == 2) {
         // Change type
@@ -179,6 +184,8 @@
           if (asdf.get('family') == data) {
             ++this.selected;
             asdf.set('selected', true);
+
+            $('.creator .iconfonts [class^="'+data+'-"]').addClass('active');
           }
         }, this);
 
@@ -187,12 +194,14 @@
         // Change type
         el.attr('data-type', '2');
         // Change the text
-        el.html('<span class="fontawesome-plus"></span> Add To Collection');
+        el.html('<span class="fontawesome-heart"></span> Add To Collection');
 
         _(this.collection.models).each(function(asdf) {
           if (asdf.get('family') == data) {
             --this.selected;
             asdf.set('selected', false);
+
+            $('.creator .iconfonts [class^="'+data+'-"]').removeClass('active');
           }
         }, this);
       }

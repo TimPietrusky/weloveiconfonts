@@ -14,9 +14,12 @@ Please help me find bugs and stuff!
 
 ## It's optimized for "small" screens
 
-With the help of the responsive micro framework [crystallo](https://github.com/TimPietrusky/crystallo):
-
 ![We Love Icon Fonts - Optimized for small screens](https://raw.github.com/TimPietrusky/weloveiconfonts/master/img/weloveiconfonts_dribbble.jpg)
+
+## Sub Navigation to jump to specific icon font
+
+![We Love Icon Fonts - Sub Navigation to jump to specific icon font](https://raw.github.com/TimPietrusky/weloveiconfonts/master/img/weloveiconfonts_dribbble_iconfont_nav)
+
 
 ## Thanks to my crowd of testers/contributors/issue-posters
 
@@ -26,6 +29,10 @@ With the help of the responsive micro framework [crystallo](https://github.com/T
 * [Mads Cordes](https://github.com/Mobilpadde)
 * [Moritz Klack](http://moritzklack.com/)
 * [Sara Soueidan](http://sarasoueidan.com/)
+
+---
+
+With the help of the responsive micro framework [crystallo](https://github.com/TimPietrusky/crystallo):
 
 ---
 
