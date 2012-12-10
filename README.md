@@ -14,6 +14,19 @@ Please help me find bugs and stuff!
 
 ## It's optimized for "small" screens
 
+With the help 
+
 ![We Love Icon Fonts - Optimized for small screens](https://raw.github.com/TimPietrusky/weloveiconfonts/master/img/weloveiconfonts_dribbble.jpg)
 
-#### Handcrafted 2012 by [@TimPietrusky](http://twitter.com/TimPietrusky) in Germany.
+## Thanks to my crowd of testers/contributors/issue-posters
+
+* [Avaz Bokiev](https://github.com/html5web)
+* [Dennis Gaebel](https://github.com/grayghostvisuals)
+* [Hugo Giraudel](https://github.com/HugoGiraudel)
+* [Mads Cordes](https://github.com/Mobilpadde)
+* [Moritz Klack](http://moritzklack.com/)
+* [Sara Soueidan](http://sarasoueidan.com/)
+
+---
+
+Handcrafted 2012 by [@TimPietrusky](http://twitter.com/TimPietrusky) in Germany.
