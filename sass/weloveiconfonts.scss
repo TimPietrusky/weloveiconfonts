@@ -600,6 +600,15 @@ textarea {
       }
     }
 
+    nav {
+      &.iconfonts {
+        a {
+          width:20%;
+          font-size:.65em;
+        }
+      }
+    }
+
     textarea {
       font-size:.55em;
       line-height:.75em;
