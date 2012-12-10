@@ -25,13 +25,6 @@ body[data-theme='weloveiconfonts'] {
   color: rgba(255, 255, 255, .9);  
   background-color:$bg_body;
   
-  // @include background(
-  //   linear-gradient(left, rgba(206, 190, 41, .3) 0%, rgba(155, 31, 80, .3) 33%, rgba(41, 137, 216, .3) 71%, rgba(137, 180, 255, .3) 95%),
-  //   linear-gradient(top, rgba(206, 190, 41, .8) 0%, rgba(155, 31, 80, .3) 33%, rgba(41, 137, 216, .7) 71%, rgba(137, 180, 255, .7) 95%),
-  //   linear-gradient(right, rgba(206, 190, 41, 1) 0%, rgba(155, 31, 80, .6) 33%, rgba(41, 137, 216, 1) 71%, rgba(137, 180, 255, 1) 95%)
-  // );
-  // background-attachment:fixed;
-
   h1 {
     font: 3.35em/1.55em 'Text Me One', sans-serif;
     letter-spacing:.15em;
@@ -246,11 +239,15 @@ body[data-theme='weloveiconfonts'] {
     background: rgba(255, 255, 255, .5); 
 
     span {
-      color:rgba(120, 0, 120, .9);
+      color:rgba(193, 31, 36, .9);
       font-weight:bold;
 
       &.url {
-        color:rgba(180, 80, 0, .9);
+        color:rgba(0, 62, 102, .9);
+      }
+
+      &.css {
+        color:rgba(200, 60, 0, .9);
       }
     }
   }
@@ -581,7 +578,8 @@ textarea {
       border-right:.15em solid rgba(255, 255, 255, .4);
 
       &:hover {
-        color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
+        background:rgba(255, 255, 255, .85);
       }
 
       &:last-child {

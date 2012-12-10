@@ -31,7 +31,7 @@
         <h1>We Love Icon Fonts</h1>
       </div>
       <div>
-        <p>This is a free & open source <b>Icon Fonts</b> hosting service (like <a href="http://www.google.com/webfonts" target="_blank">Google Web Fonts</a>). Hurray! </p>
+        <p>This is a free & open source <b>icon fonts hosting service</b> (like <a href="http://www.google.com/webfonts" target="_blank">Google Web Fonts</a>, but icon fonts only). Hurray! </p>
       </div>
       
       <div>
@@ -188,13 +188,13 @@ Pro tip: Select some icon fonts to the see real output here!
 <span>/* brandico */</span>
 [class^="brandico-"]:before, 
 [class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
+  <span class="css">font-family: 'brandico', sans-serif;</span>
 }
 
 <span>/* typicons */</span>
 [class^="typicons-"]:before, 
 [class*="typicons-"]:before {
-  font-family: 'Typicons', sans-serif;
+  <span class="css">font-family: 'Typicons', sans-serif;</span>
 }
         </pre>
       </div>
@@ -203,7 +203,7 @@ Pro tip: Select some icon fonts to the see real output here!
         
         <pre data-type="1">
 <span>&lt;!-- Single Element --></span>
-&lt;span class="typicons-puzzle"></span>
+&lt;span class=<span class="css">"typicons-puzzle"</span>>&lt;/span>
         </pre>
         
         <hr>
@@ -215,10 +215,10 @@ Pro tip: Select some icon fonts to the see real output here!
         <pre data-type="1">
 <span>&lt;!-- Group of Elements --></span>
 &lt;ul>
-  &lt;li class="brandico-twitter-bird">&lt;/li>
-  &lt;li class="brandico-odnoklassniki">&lt;/li>
-  &lt;li class="brandico-icq">&lt;/li>
-  &lt;li class="brandico-github">&lt;/li>
+  &lt;li class=<span class="css">"brandico-twitter-bird"</span>>&lt;/li>
+  &lt;li class=<span class="css">"brandico-odnoklassniki"</span>>&lt;/li>
+  &lt;li class=<span class="css">"brandico-icq"</span>>&lt;/li>
+  &lt;li class=<span class="css">"brandico-github"</span>>&lt;/li>
 &lt;/ul>
         </pre>
         
@@ -247,7 +247,7 @@ Pro tip: Select some icon fonts to the see real output here!
         </a>
       </div>
       <div>
-        <a href="http://twitter.com/share?text=We+Love+Icon+Fonts+-+A+free+icon+fonts+hosting+service&url=http://weloveiconfonts.com" target="_blank">
+        <a href="http://twitter.com/share?text=We+Love+Icon+Fonts+-+A+free+and+open-source+icon+fonts+hosting+service+by+@TimPietrusky&url=http://weloveiconfonts.com" target="_blank">
           <button data-type="1">
             Spread
             <span class="zocial zocial-twitter"></span>

@@ -280,7 +280,7 @@
 
           body += "<span>/* " + model.get('family') + " */</span>\n"+
             "[class^=\"" + model.get('family') + "-\"]:before, \n[class*=\"" + model.get('family') + "-\"]:before {"+
-            "\n  font-family: '" + model.get('font') + "', sans-serif;"+
+            "\n  <span class=\"css\">font-family: '" + model.get('font') + "', sans-serif;</span>"+
             "\n}\n\n";
         }
       }, this);
