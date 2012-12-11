@@ -20,6 +20,22 @@ Please help me find bugs and stuff!
 
 ![We Love Icon Fonts - Sub Navigation to jump to specific icon font](https://raw.github.com/TimPietrusky/weloveiconfonts/master/img/weloveiconfonts_dribbble_iconfont_nav.jpg)
 
+---
+
+## Based on these open source projects
+
+### Frameworks
+* [Backbone.js](http://backbonejs.org) - JavaScript MVC framework
+* [crystallo](https://github.com/TimPietrusky/crystallo) - Responsive Micro Framework 
+
+### Fonts
+* [Brandico](https://github.com/fontello/brandico.font) - Crowdsourced collection of web brands by fontello
+* [entypo](http://entypo.com) - A set of 250+ carefully crafted pictograms by Daniel Bruce
+* [Font Awesome](http://fortawesome.github.com/Font-Awesome/) - The iconic font designed for use with Twitter Bootstrap
+* [Typicons](http://typicons.com/) - Just some nice icons by Stephen Hutchings.
+* [zocial](http://zocial.smcllns.com) - Amazing social collection by Sam Collins.
+
+---
 
 ## Thanks to my crowd of testers/contributors/issue-posters
 
@@ -29,10 +45,6 @@ Please help me find bugs and stuff!
 * [Mads Cordes](https://github.com/Mobilpadde)
 * [Moritz Klack](http://moritzklack.com/)
 * [Sara Soueidan](http://sarasoueidan.com/)
-
----
-
-With the help of the responsive micro framework [crystallo](https://github.com/TimPietrusky/crystallo):
 
 ---
 
