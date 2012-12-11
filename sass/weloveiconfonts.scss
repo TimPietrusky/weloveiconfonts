@@ -194,7 +194,6 @@ body[data-theme='weloveiconfonts'] {
   section[data-name='preview'] {
     padding-bottom:1.85em;
 
-    // Small mode (@TODO: [TimPietrusky] - Minimal list view)
     &.minimal {
       max-height:7.25em;
       overflow-y:auto;
@@ -267,25 +266,24 @@ body[data-theme='weloveiconfonts'] {
 
   ul {
     list-style-type: none;
+    padding:0 1.5em;
 
     li {
       position:relative;
       float:left;
       width:10%;
       height:10%;
-      padding:.5em 0;
+      padding:.5em;
       @include transition(all .25s ease-out);
 
       &:hover {
         cursor:pointer;
-        padding:.5em;
         @include transform(scale(1.5, 1.5));
         z-index:2;
 
         &:after {
           position:absolute;
-          bottom:-2em;
-          right:1.5em;
+          margin:0 0 0 1em;
           min-height:2em;
           content:attr(data-text);
           background:rgba(0, 0, 0, .6);
@@ -381,43 +379,29 @@ body[data-theme='weloveiconfonts'] {
     line-height:.05em;
   }
 
-  ul {
-    /*
-    font-family:'brandico';
-    font-family:'entypo';
-    font-family:'FontAwesome';
-    font-family:'fontelico';
-    font-family:'IconicFill';
-    font-family:'IconicStroke';
-    font-family:'maki';
-    font-family:'Typicons';
-    font-family:'zocial';
-    */
+  textarea[data-name="text"],
+  section[data-name="preview"] {
+    width:100%;
+    background-size: 100% 1.75em;
+    overflow-x:hidden;
+    resize:none;
+
+    &::-webkit-scrollbar {
+      width: 1.25em;
+    }
+   
+    &::-webkit-scrollbar-track {
+      background: rgba(white, .2);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(white, .5);
+    }
   }
 
-textarea[data-name="text"],
-section[data-name="preview"] {
-  width:100%;
-  background-size: 100% 1.75em;
-  overflow-x:hidden;
-  resize:none;
-
-  &::-webkit-scrollbar {
-    width: 1.25em;
-  }
- 
-  &::-webkit-scrollbar-track {
-    background: rgba(white, .2);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: rgba(white, .5);
-  }
-}
-
-button,
-pre,
-textarea {
+  button,
+  pre,
+  textarea {
     position: relative;
     text-decoration: none;
     display: inline-block;
@@ -610,6 +594,10 @@ textarea {
           &.active {
             background: rgba(188, 56, 98, .3);
 
+            &:hover {
+              background:rgba(255, 255, 255, .85);
+            }
+
             &:after {
               position:absolute;
               right:.15em;
@@ -663,13 +651,12 @@ textarea {
       padding:0;
 
       li {
-        padding:.5em 2em;
+        padding:.5em 1em;
         width:25%;
         font-size:1.25em;
 
         &:hover {
           @include transform(none);
-          padding:.5em 2em;
         }
       }
     }
