@@ -14,7 +14,7 @@
 .openwebicons-opensearch:before { content: "\f002"; }
 .openwebicons-oauth:before { content: "\f008"; }
 .openwebicons-openid:before { content: "\f00D"; }
-.openwebicons-rdf:before, .openwebicons-rdfa:before, .openwebicons-owl:before { content: "\f000"; }
+.openwebicons-rdf:before { content: "\f000"; }
 .openwebicons-dataportability:before { content: "\f013"; }
 .openwebicons-federated:before { content: "\f011"; }
 .openwebicons-web-intents:before { content: "\f014"; }

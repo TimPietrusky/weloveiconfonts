@@ -1,7 +1,7 @@
 /* theme */
 @import "compass/css3/images";
 @import "compass/css3";
-@import url(http://weloveiconfonts.com/api/?family=typicons|brandico|entypo|zocial|iconicfill|fontawesome|openwebicons);
+@import url(http://weloveiconfonts.com/api/?family=typicons|brandico|entypo|zocial|fontawesome|openwebicons|fontelico|maki);
 @import url(http://fonts.googleapis.com/css?family=Text+Me+One|Chau+Philomene+One|Source+Code+Pro:400);
 
 $bg_body: #333;
@@ -130,7 +130,8 @@ body[data-theme='weloveiconfonts'] {
     text-shadow:0 0 .065em rgba(0, 0, 0, .7);
   }
 
-  article[data-high="1"] {y
+  article[data-high="1"],
+  article[data-high="5"] {
     p {
       font: 1.2em/1.75em 'Text Me One', sans-serif;
     }
@@ -197,6 +198,26 @@ body[data-theme='weloveiconfonts'] {
     &.minimal {
       max-height:7.25em;
       overflow-y:auto;
+    }
+
+    li {
+      &:hover {
+        cursor:pointer;
+        @include transform(scale(1.5, 1.5));
+        z-index:2;
+
+        &:after {
+          position:absolute;
+          margin:0 0 0 1em;
+          min-height:2em;
+          content:attr(data-text);
+          background:rgba(0, 0, 0, .6);
+          padding:.35em;
+          font: .5em 'Chau Philomene One', sans-serif;
+          letter-spacing: .155em;
+          vertical-align: middle;
+        }
+      }
     }
   }
 
@@ -275,24 +296,7 @@ body[data-theme='weloveiconfonts'] {
       height:10%;
       padding:.5em;
       @include transition(all .25s ease-out);
-
-      &:hover {
-        cursor:pointer;
-        @include transform(scale(1.5, 1.5));
-        z-index:2;
-
-        &:after {
-          position:absolute;
-          margin:0 0 0 1em;
-          min-height:2em;
-          content:attr(data-text);
-          background:rgba(0, 0, 0, .6);
-          padding:.35em;
-          font: .5em 'Chau Philomene One', sans-serif;
-          letter-spacing: .155em;
-          vertical-align: middle;
-        }
-      }
+      text-align: center;
     }
   }
 
@@ -301,33 +305,44 @@ body[data-theme='weloveiconfonts'] {
     @include transition(all .25s ease-out);
   }
 
-  [class^="typicons-"]:before, [class*=" typicons-"]:before {
+  [class*="typicons-"]:before {
     font-family:'Typicons', sans-serif;
     font-size:1.25em;
+    line-height: 1.75em;
   }
 
-  [class^="openwebicons-"]:before, [class*=" openwebicons-"]:before {
+  [class*="openwebicons-"]:before {
     font-family:'OpenWeb Icons', sans-serif;
     font-size:1.25em;
+    line-height: 1.25em;
   }
 
-  [class^="brandico-"]:before, [class*=" brandico-"]:before {
+  [class*="brandico-"]:before {
     font-family:'brandico', sans-serif;
   }
 
-  [class^="entypo-"]:before, [class*=" entypo-"]:before {
+  [class*="maki-"]:before {
+    font-family:'maki', sans-serif;
+    font-size:1.25em;
+  }
+
+  [class*="entypo-"]:before {
     font-family:'entypo', sans-serif;
   }
 
-  [class^="fontawesome-"]:before, [class*=" fontawesome-"]:before {
+  [class*="fontawesome-"]:before {
     font-family:'FontAwesome', sans-serif;
   }
 
-  [class^="iconicfill-"]:before, [class*=" iconicfill-"]:before {
+  [class*="fontelico-"]:before {
+    font-family:'fontelico', sans-serif;
+  }
+
+  [class*="iconicfill-"]:before {
     font-family:'IconicFill', sans-serif;
   }
 
-  [class^="zocial-"]:before, [class*=" zocial-"]:before {
+  [class*="zocial-"]:before {
     font-family:'zocial', sans-serif;
   }
 
@@ -539,7 +554,7 @@ body[data-theme='weloveiconfonts'] {
 
   .creator {
     position:fixed;
-    width:30%;
+    width:35%;
     top:0;
     right:0;
     z-index:1337;
@@ -579,8 +594,8 @@ body[data-theme='weloveiconfonts'] {
       color: inherit;
       width:25%;
       float:left;
-      line-height:2.25em;
-      max-height:2.25em;
+      line-height:1.85em;
+      max-height:1.85em;
       text-align: center;
       border:none;
       border-right:.15em solid rgba(255, 255, 255, .4);
@@ -597,8 +612,12 @@ body[data-theme='weloveiconfonts'] {
 
     nav {
       &.iconfonts {
+        div:nth-child(1) a {
+          border-bottom:.15em solid rgba(255, 255, 255, .4);
+        }
+
         a {
-          width:16.667%;
+          width:20%;
           font-size:.65em;
           position:relative;
 
@@ -611,7 +630,7 @@ body[data-theme='weloveiconfonts'] {
 
             &:after {
               position:absolute;
-              right:.15em;
+              right:.015em;
               top:.45em;
               content:'\f004';
               font: .75em/.85em 'FontAwesome', sans-serif;

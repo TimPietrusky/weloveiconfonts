@@ -12,6 +12,10 @@ Just choose your favorite Icon Fonts and use them on your website. It's really t
 
 Please help me find bugs and stuff!
 
+## In the wild
+
+* Used as an integration method on [OpenWeb Icons](http://pfefferle.github.com/openwebicons/#weloveiconfonts)
+
 ## It's optimized for "small" screens
 
 ![We Love Icon Fonts - Optimized for small screens](https://raw.github.com/TimPietrusky/weloveiconfonts/master/img/weloveiconfonts_dribbble.jpg)
@@ -32,6 +36,7 @@ Please help me find bugs and stuff!
 * [Brandico](https://github.com/fontello/brandico.font) - Crowdsourced collection of web brands by fontello
 * [entypo](http://entypo.com) - A set of 250+ carefully crafted pictograms by Daniel Bruce
 * [Font Awesome](http://fortawesome.github.com/Font-Awesome/) - The iconic font designed for use with Twitter Bootstrap
+* [OpenWeb Icons](http://pfefferle.github.com/openwebicons/#weloveiconfonts)
 * [Typicons](http://typicons.com/) - Just some nice icons by Stephen Hutchings.
 * [zocial](http://zocial.smcllns.com) - Amazing social collection by Sam Collins.
 

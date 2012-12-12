@@ -288,7 +288,7 @@
           url += model.get('family');
 
           body += "<span>/* " + model.get('family') + " */</span>\n"+
-            "[class^=\"" + model.get('family') + "-\"]:before, \n[class*=\"" + model.get('family') + "-\"]:before {"+
+            "[class*=\"" + model.get('family') + "-\"]:before {"+
             "\n  <span class=\"css\">font-family: '" + model.get('font') + "', sans-serif;</span>"+
             "\n}\n\n";
         }
@@ -313,6 +313,19 @@
   iconsCollection1.fetch().then(function() {
     var iconsView = new App.Views.Icons({ collection : iconsCollection1 });
     $('.entypo section[data-name="preview"] div').append(iconsView.render().el);
+  });
+
+
+  var iconsCollection6 = new App.Collections.Icons({'family':'fontelico'});
+  iconsCollection6.fetch().then(function() {
+    var iconsView = new App.Views.Icons({ collection : iconsCollection6 });
+    $('.fontelico section[data-name="preview"] div').append(iconsView.render().el);
+  });
+
+  var iconsCollection7 = new App.Collections.Icons({'family':'maki'});
+  iconsCollection7.fetch().then(function() {
+    var iconsView = new App.Views.Icons({ collection : iconsCollection7 });
+    $('.maki section[data-name="preview"] div').append(iconsView.render().el);
   });
 
   var iconsCollection5 = new App.Collections.Icons({'family':'openwebicons'});
@@ -344,6 +357,8 @@
     {"family" : "brandico", "font" : "brandico", "selected" : false},
     {"family" : "entypo", "font" : "entypo", "selected" : false},
     {"family" : "fontawesome", "font" : "FontAwesome","selected" : false},
+    {"family" : "fontelico", "font" : "fontelico","selected" : false},
+    {"family" : "maki", "font" : "maki","selected" : false},
     {"family" : "openwebicons", "font" : "OpenWeb Icons","selected" : false},
     {"family" : "typicons", "font" : "Typicons","selected" : false},
     {"family" : "zocial", "font" : "zocial","selected" : false}
