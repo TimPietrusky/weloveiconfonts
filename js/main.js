@@ -315,6 +315,12 @@
     $('.entypo section[data-name="preview"] div').append(iconsView.render().el);
   });
 
+  var iconsCollection5 = new App.Collections.Icons({'family':'openwebicons'});
+  iconsCollection5.fetch().then(function() {
+    var iconsView = new App.Views.Icons({ collection : iconsCollection5 });
+    $('.openwebicons section[data-name="preview"] div').append(iconsView.render().el);
+  });
+
   var iconsCollection2 = new App.Collections.Icons({'family':'typicons'});
   iconsCollection2.fetch().then(function() {
     var iconsView = new App.Views.Icons({ collection : iconsCollection2 });
@@ -338,6 +344,7 @@
     {"family" : "brandico", "font" : "brandico", "selected" : false},
     {"family" : "entypo", "font" : "entypo", "selected" : false},
     {"family" : "fontawesome", "font" : "FontAwesome","selected" : false},
+    {"family" : "openwebicons", "font" : "OpenWeb Icons","selected" : false},
     {"family" : "typicons", "font" : "Typicons","selected" : false},
     {"family" : "zocial", "font" : "zocial","selected" : false}
   ]);

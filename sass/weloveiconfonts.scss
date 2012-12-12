@@ -1,7 +1,7 @@
 /* theme */
 @import "compass/css3/images";
 @import "compass/css3";
-@import url(http://weloveiconfonts.com/api/?family=typicons|brandico|entypo|zocial|iconicfill|fontawesome);
+@import url(http://weloveiconfonts.com/api/?family=typicons|brandico|entypo|zocial|iconicfill|fontawesome|openwebicons);
 @import url(http://fonts.googleapis.com/css?family=Text+Me+One|Chau+Philomene+One|Source+Code+Pro:400);
 
 $bg_body: #333;
@@ -288,8 +288,8 @@ body[data-theme='weloveiconfonts'] {
           content:attr(data-text);
           background:rgba(0, 0, 0, .6);
           padding:.35em;
-          font: .55em 'Chau Philomene One', sans-serif;
-          letter-spacing: .15em;
+          font: .5em 'Chau Philomene One', sans-serif;
+          letter-spacing: .155em;
           vertical-align: middle;
         }
       }
@@ -303,6 +303,11 @@ body[data-theme='weloveiconfonts'] {
 
   [class^="typicons-"]:before, [class*=" typicons-"]:before {
     font-family:'Typicons', sans-serif;
+    font-size:1.25em;
+  }
+
+  [class^="openwebicons-"]:before, [class*=" openwebicons-"]:before {
+    font-family:'OpenWeb Icons', sans-serif;
     font-size:1.25em;
   }
 
@@ -352,6 +357,12 @@ body[data-theme='weloveiconfonts'] {
     content:'\f025 \f075 \f083';
     letter-spacing:.45em;
     font-family:'FontAwesome', sans-serif;
+  }
+
+  article[data-text].openwebicons:after {
+    content:'\f016 \f015 \f007';
+    letter-spacing:.45em;
+    font-family:'OpenWeb Icons', sans-serif;
   }
 
   article[data-high="1"].fontawesome:after {
@@ -587,7 +598,7 @@ body[data-theme='weloveiconfonts'] {
     nav {
       &.iconfonts {
         a {
-          width:20%;
+          width:16.667%;
           font-size:.65em;
           position:relative;
 

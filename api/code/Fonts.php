@@ -68,6 +68,14 @@ class Fonts {
       'style' => 'normal',
     ),
 
+    'openwebicons' => array(
+      'family' => 'OpenWeb Icons',
+      'filename' => 'openwebicons',
+      'svgID' => 'openweb_iconsregular',
+      'weight' => 'normal',
+      'style' => 'normal',
+    ),
+
     'typicons' => array(
       'family' => 'Typicons',
       'filename' => 'typicons-regular-webfont',
