@@ -278,7 +278,8 @@
       var url = "@import url(<span class=\"url\">http://weloveiconfonts.com/api/?family=",
           link = "&lt;link href='http://weloveiconfonts.com/api/?family='",
           body = "",
-          count = 0;
+          count = 0,
+          count_added = 0;
 
       this.collection.each(function(model) {
         if (model.get('selected')) {
@@ -291,11 +292,20 @@
             "[class*=\"" + model.get('family') + "-\"]:before {"+
             "\n  <span class=\"css\">font-family: '" + model.get('font') + "', sans-serif;</span>"+
             "\n}\n\n";
+
+        } else {
+          ++count_added;
         }
       }, this);
 
       url += "</span>);\n\n";
       link += "\n\ rel='stylesheet' type='text/css'>";
+
+      // Set the default pro tip when all collection are removed
+      if (count_added == this.collection.length) {
+        url = "";
+        body = "Pro tip: Select some icon fonts to the see real output here!\n\n";
+      }
 
       // URL
       this.$el.html(url + body);
