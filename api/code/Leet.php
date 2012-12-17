@@ -95,8 +95,6 @@ class Leet {
 
         // Track page view
         $tracker->trackPageview($page, $session, $visitor);
-
-        print_r($tracker);
     }
 }
 
