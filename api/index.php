@@ -18,6 +18,8 @@
        $fonts .= Leet::$Fonts->getFamily($fontname);
     }
 
+    Leet::track();
+
     // Output is CSS
     header('Content-type: text/css');
     print trim($fonts);
