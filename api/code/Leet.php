@@ -77,24 +77,26 @@ class Leet {
      * Track the request with Google Analytics.
      */
     public static function track() {
-        // Initilize GA Tracker
-        $tracker = new GoogleAnalytics\Tracker('UA-5596313-6', 'weloveiconfonts.com');
+        if (self::$isLive) {
+            // Initilize GA Tracker
+            $tracker = new GoogleAnalytics\Tracker('UA-5596313-6', 'weloveiconfonts.com');
 
-        // Assemble Visitor information
-        $visitor = new GoogleAnalytics\Visitor();
-        $visitor->setIpAddress($_SERVER['REMOTE_ADDR']);
-        $visitor->setUserAgent($_SERVER['HTTP_USER_AGENT']);
-        $visitor->setScreenResolution('1024x768');
+            // Assemble Visitor information
+            $visitor = new GoogleAnalytics\Visitor();
+            $visitor->setIpAddress($_SERVER['REMOTE_ADDR']);
+            $visitor->setUserAgent($_SERVER['HTTP_USER_AGENT']);
+            $visitor->setScreenResolution('1024x768');
 
-        // Assemble Session information
-        $session = new GoogleAnalytics\Session();
+            // Assemble Session information
+            $session = new GoogleAnalytics\Session();
 
-        // Assemble Page information
-        $page = new GoogleAnalytics\Page($_SERVER['REQUEST_URI']);
-        $page->setTitle('We Love Icon Fonts');
+            // Assemble Page information
+            $page = new GoogleAnalytics\Page($_SERVER['REQUEST_URI']);
+            $page->setTitle('We Love Icon Fonts');
 
-        // Track page view
-        $tracker->trackPageview($page, $session, $visitor);
+            // Track page view
+            $tracker->trackPageview($page, $session, $visitor);
+        }
     }
 }
 
