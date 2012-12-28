@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'sosa';
+  font-style: 'normal';
+  font-weight: 'normal';
+  src: url('zocial-regular-webfont.eot');
+  src: url('zocial-regular-webfont.eot?#iefix') format('eot'), 
+  url('zocial-regular-webfont.woff') format('woff'), 
+  url('zocial-regular-webfont.ttf') format('truetype'), 
+  url('zocial-regular-webfont.svg') format('svg');
+}
