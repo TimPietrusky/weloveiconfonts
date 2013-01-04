@@ -47,6 +47,7 @@ Please help me find bugs and stuff!
 * [Avaz Bokiev](https://github.com/html5web)
 * [Dennis Gaebel](https://github.com/grayghostvisuals)
 * [Hugo Giraudel](https://github.com/HugoGiraudel)
+* [koolbob23](https://github.com/koolbob23)
 * [Mads Cordes](https://github.com/Mobilpadde)
 * [Moritz Klack](http://moritzklack.com/)
 * [Sara Soueidan](http://sarasoueidan.com/)
