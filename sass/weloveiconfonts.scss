@@ -16,7 +16,7 @@ body {
   &::-moz-selection,
   &::selection { 
     color: rgba(0, 0, 0, .9);  
-    background: rgba(255, 255, 255, .5); 
+    background: rgba(255, 255, 255, .5);
   } 
 }
 
@@ -26,11 +26,13 @@ body[data-theme='weloveiconfonts'] {
   background-color:$bg_body;
   
   h1 {
-    font: 3.35em/1.55em 'Text Me One', sans-serif;
+    font: 3.45em/1.55em 'Text Me One', sans-serif;
     letter-spacing:.15em;
     font-variant: small-caps;
-    color:rgba(255, 255, 255, .8);
+    color:#fff;
     margin:.4em 0;
+
+    text-shadow: .055em .055em .05em rgba(0, 0, 0, .2);
   }
 
   h2 {
@@ -40,6 +42,7 @@ body[data-theme='weloveiconfonts'] {
     padding:0 0 .5em 0;
     margin:.25em 0 .5em 0;
     color: rgba(255, 255, 255, .95);
+    text-shadow: .075em .075em .05em rgba(0, 0, 0, .2);
 
     > span {
       font-size:1.2em;
@@ -47,10 +50,10 @@ body[data-theme='weloveiconfonts'] {
   }
 
   h3 {
-    font: 1.15em/1.3em 'Chau Philomene One', sans-serif;
+    font: 1.35em/1.3em 'Chau Philomene One', sans-serif;
     font-weight:normal;
     letter-spacing:.05em;
-    margin:.75em 0 .65em 0;
+    margin:1.15em 0 .75em 0;
   }
 
   a,
@@ -144,7 +147,7 @@ body[data-theme='weloveiconfonts'] {
       linear-gradient(top, rgba(206, 190, 41, .6) 0%, rgba(155, 31, 80, .3) 33%, rgba(41, 137, 216, .7) 71%, rgba(137, 180, 255, .7) 95%),
       linear-gradient(left, rgba(206, 190, 41, .6) 0%, rgba(155, 31, 80, .6) 33%, rgba(41, 137, 216, .6) 71%, rgba(137, 180, 255, 1) 95%)
     );
-    background-attachment:fixed;
+    /* background-attachment:fixed; */
 
     padding-bottom:1em;
     box-shadow:0 .35em .85em rgba(0, 0, 0, .3);
@@ -366,6 +369,18 @@ body[data-theme='weloveiconfonts'] {
     content:'\e723 \e79b \2692';
     letter-spacing:.45em;
     font-family:'entypo', sans-serif;
+  }
+
+  article[data-text].fontelico:after {
+    content:'\e805 \e838 \e841';
+    letter-spacing:.45em;
+    font-family:'fontelico', sans-serif;
+  }
+
+  article[data-text].maki:after {
+    content:'\e81b \e83e \e812';
+    letter-spacing:.75em;
+    font-family:'maki', sans-serif;
   }
 
   article[data-text].fontawesome:after {

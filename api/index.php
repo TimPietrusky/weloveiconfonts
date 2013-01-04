@@ -34,17 +34,11 @@
     $array = json_decode($json, true);
     $output = array();
 
-    // $output['font'] = Leet::$Fonts->getFont($name);
-
     foreach ($array as $key => $value) {
       $output[] = array(
         'name' => $key,
         'value' => $value
       );
-      // $output['elements'][] = array(
-      //   'name' => $key,
-      //   'value' => $value
-      // );
     }
 
     header('Content-type: application/json');
