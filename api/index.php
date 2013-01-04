@@ -1,5 +1,10 @@
 <?php
 
+  // Compress output if supported
+  if (function_exists("gzcompress")) {
+    ob_start('ob_gzhandler');
+  }
+
   // Run Leet
   require_once 'code/Leet.php';
   Leet::run();
@@ -45,5 +50,4 @@
     print trim(json_encode($output));
     exit();
   }
-
 ?>
