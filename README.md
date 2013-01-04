@@ -42,11 +42,12 @@ Please help me find bugs and stuff!
 
 ---
 
-## Thanks to my crowd of testers/contributors/issue-posters
+## Thanks to all the awesome people for their support
 
 * [Avaz Bokiev](https://github.com/html5web)
 * [Dennis Gaebel](https://github.com/grayghostvisuals)
 * [Hugo Giraudel](https://github.com/HugoGiraudel)
+* [Jason Hoffmann](https://github.com/JasonHoffmann)
 * [koolbob23](https://github.com/koolbob23)
 * [Mads Cordes](https://github.com/Mobilpadde)
 * [Moritz Klack](http://moritzklack.com/)
