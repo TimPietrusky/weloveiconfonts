@@ -2,8 +2,6 @@
 
 This is like [Google Web Fonts](http://www.google.com/webfonts), but for Open Source Icon Fonts. Hurray!
 
-This is not like [Fontello](http://fontello.com/), because you can't generate Icon Fonts here.
-
 Just choose your favorite Icon Fonts and use them on your website. It's really that simple!
 
 ## Public Beta
@@ -11,6 +9,10 @@ Just choose your favorite Icon Fonts and use them on your website. It's really t
 [weloveiconfonts.com](http://weloveiconfonts.com)
 
 Please help me find bugs and stuff!
+
+## Vote for this project
+
+**domainFACTORY** is giving away a free lifetime hosting for one of 5 open-source projects, [so please vote for WLIF](http://www.df.eu/blog/2013/01/17/leserwahl-open-source-projekt-fur-lebenslanges-gratis-hosting-gesucht/#polls-2)</a>. 
 
 ## In the wild
 
