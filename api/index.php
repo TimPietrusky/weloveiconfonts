@@ -27,6 +27,8 @@
 
     // Output is CSS
     header('Content-type: text/css');
+    header('Content-Encoding: gzip');
+
     print trim($fonts);
     exit();
   }
@@ -47,6 +49,8 @@
     }
 
     header('Content-type: application/json');
+    header('Content-Encoding: gzip');
+    
     print trim(json_encode($output));
     exit();
   }
