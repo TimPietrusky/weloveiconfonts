@@ -4,15 +4,13 @@ This is like [Google Web Fonts](http://www.google.com/webfonts), but for Open So
 
 Just choose your favorite Icon Fonts and use them on your website. It's really that simple!
 
-## Public Beta
-
 [weloveiconfonts.com](http://weloveiconfonts.com)
 
-Please help me find bugs and stuff!
 
-## Vote for this project
+## Creating 2.0
 
-**domainFACTORY** is giving away a free lifetime hosting for one of 5 open-source projects, [so please vote for WLIF](http://www.df.eu/blog/2013/01/17/leserwahl-open-source-projekt-fur-lebenslanges-gratis-hosting-gesucht/#polls-2)</a>. 
+The next step is to create a version which suits the needs of the community. So please [share your ideas with me](http://timpietrusky.com/what-do-you-want-for-we-love-icon-fonts-2). 
+
 
 ## In the wild
 
@@ -57,4 +55,4 @@ Please help me find bugs and stuff!
 
 ---
 
-Handcrafted 2012 by [@TimPietrusky](http://twitter.com/TimPietrusky) in Germany.
+Handcrafted 2012 & more by [@TimPietrusky](http://twitter.com/TimPietrusky) in Germany.
