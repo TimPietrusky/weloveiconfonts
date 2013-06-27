@@ -16,7 +16,9 @@
   if (!empty($family)) {
     // Get the fonts
     $names = explode('|', $family);
-    $fonts = "";
+
+    // #36: Set the default charset
+    $fonts = "@charset 'UTF-8';";
 
     // Get the CSS for each font
     foreach ($names as $key => $fontname) {
