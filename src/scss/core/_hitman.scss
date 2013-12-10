@@ -9,6 +9,7 @@
 
 .hitman__gamma {
 	background: none !important;
+  padding: 0;
 
 	&:hover {
 		background: none !important;
@@ -18,4 +19,5 @@
 .hitman__delta {
 	text-align: left !important;
 	padding-left: 0 !important;
+  padding-top: .25em;
 }

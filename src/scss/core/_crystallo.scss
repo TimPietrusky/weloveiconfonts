@@ -103,6 +103,14 @@ section {
     height:100%;
     margin:0;
     padding: $crystallo-padding-top $crystallo-padding-right $crystallo-padding-bottom $crystallo-padding-left;
+
+    section {
+      padding: 0;
+      
+      > div {
+        padding: 0
+      }
+    }
   }
 } 
 
