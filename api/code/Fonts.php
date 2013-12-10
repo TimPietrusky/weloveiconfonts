@@ -132,8 +132,8 @@ class Fonts {
     $this->output = "
 @font-face {
   font-family: '" . $font->family . "';
-  font-style: '" . $font->style . "';
-  font-weight: '" . $font->weight . "';
+  font-style: " . $font->style . ";
+  font-weight: " . $font->weight . ";
   src: url('" . Leet::$url_api . $name . "/" . $font->filename . ".eot');
   src: url('" . Leet::$url_api . $name . "/" . $font->filename . ".eot?#iefix') format('eot'), 
   url('" . Leet::$url_api . $name . "/" . $font->filename . ".woff') format('woff'), 
