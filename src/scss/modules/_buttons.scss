@@ -1,0 +1,56 @@
+button {
+  cursor:pointer;
+  font-size:1.5em;
+  padding: .25em;
+  width: 100%;
+  height: 3.5em;
+  color: white;
+  font-family: 'Lato';
+
+  span:before {
+    font-weight:normal;
+  }
+
+  &:active {
+    @include transform(translate3d(
+       .15em, .15em, 0
+    ));
+  }
+}
+
+button[data-width="50"] {
+  width:50%;
+}
+
+button[data-width="33"] {
+  width:33.3%;
+}
+
+button[data-high='1'] {
+  background: hsla(60, 90%, 60%, .7);
+}
+
+button[data-high='2'] {
+  background: hsla(110, 90%, 60%, .7);
+}
+
+button[data-high='3'] {
+  background: hsla(210, 90%, 60%, .7);
+}
+
+button[data-high='4'] {
+  background: hsla(280, 90%, 60%, .7);
+}
+
+button[data-high='5'] {
+  background: hsla(360, 90%, 60%, .7);
+}
+
+
+.social__twitter:hover span {
+  color: #71bdf4;
+}
+
+.social__github:hover span {
+  color: #f4d871;
+}

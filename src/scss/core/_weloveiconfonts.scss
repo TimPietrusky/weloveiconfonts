@@ -24,34 +24,6 @@ hr {
   margin:2.15em 0 1.75em 0;
 }
 
-button[data-width="50"] {
-  width:50%;
-}
-
-button[data-width="33"] {
-  width:33.3%;
-}
-
-button[data-high='1'] {
-  background: hsla(60, 90%, 60%, .7);
-}
-
-button[data-high='2'] {
-  background: hsla(110, 90%, 60%, .7);
-}
-
-button[data-high='3'] {
-  background: hsla(210, 90%, 60%, .7);
-}
-
-button[data-high='4'] {
-  background: hsla(280, 90%, 60%, .7);
-}
-
-button[data-high='5'] {
-  background: hsla(360, 90%, 60%, .7);
-}
-
 article {
   margin-top: 0;
 }
@@ -151,12 +123,23 @@ textarea {
 }
 
 .plain {
-  width:100%;
-  display:block;
+  width: 100%;
+  display: block;
+  opacity: 0;
 }
 
 pre {
-  background: #fff;
+
+  width: 100%;
+
+  &[data-type="1"] {
+    border: .175em solid #999;
+
+    &.output {
+      border-color: #fff;
+    }
+  }
+
 
   span {
     color: #f47771;
@@ -186,13 +169,13 @@ pre[data-text]:after {
 
 ul {
   list-style-type: none;
-  padding: 0 1.5em;
+  padding: 0;
 
   li {
     font-size: 1.5em;
     position: relative;
     float: left;
-    width: 7%;
+    width: 10%;
     height: 10%;
     padding: .65em;
     margin: .25em 0;
@@ -324,26 +307,6 @@ textarea {
   }
 }
 
-button {
-  cursor:pointer;
-  font-size:1.5em;
-  padding: .25em;
-  width:100%;
-  height: 4.25em;
-  color: white;
-  font-family: 'Lato';
-
-  span:before {
-    font-weight:normal;
-  }
-
-  &:active {
-    @include transform(translate3d(
-       .15em, .15em, 0
-    ));
-  }
-}
-
 .creator {
   position:fixed;
   width:100%;
@@ -362,6 +325,7 @@ button {
     &.active {
       font-weight: bold;
       box-shadow: inset 0 0 0 1em #71bdf4;
+      opacity: 1;
     }
   }
 
@@ -433,8 +397,9 @@ button {
     height: 1em;
     padding: 0 .25em 0 .25em;
     height: 2.15em;
+    opacity: 0;
 
-    @include transition(background .25s ease-in-out);
+    @include transition(opacity .25s ease-in-out);
   }
 }
 

@@ -151,13 +151,15 @@
 
       data['class'] = data['class'].replace(/active/g, '');
       textarea.val(data['class']);
-      
-      textarea.css({'opacity': '.2'});
-      textarea.fadeOut(0, function(){
-        $(this).fadeIn(200, function() {
-          textarea.css({'opacity': '1'});
+
+      if (textarea.val != "") {
+        textarea.css({'opacity': '0'});
+        textarea.fadeOut(0, function() {
+          $(this).fadeIn(0, function() {
+            textarea.css({'opacity': '1'});
+          });
         });
-      });
+      }
     },
 
     /**
@@ -186,8 +188,6 @@
           if (asdf.get('family') == data) {
             ++this.selected;
             asdf.set('selected', true);
-
-            $('.creator .iconfonts [class^="'+data+'-"]').addClass('active');
           }
         }, this);
 
@@ -202,8 +202,6 @@
           if (asdf.get('family') == data) {
             --this.selected;
             asdf.set('selected', false);
-
-            $('.creator .iconfonts [class^="'+data+'-"]').removeClass('active');
           }
         }, this);
       }
@@ -214,15 +212,16 @@
     counter : function() {
       var counter = $('.creator .plain');
 
-
       if (this.selected > 0) {
+        counter.html(this.selected);
+
         if (!counter.hasClass('active')) {
           counter.addClass('active');
         }
       } else {
         counter.removeClass('active');
+        counter.html();
       }
-      counter.html(this.selected);
     }
 ,
     /**
