@@ -352,7 +352,23 @@ Pro tip: Select some icon fonts to the see real output here!
   <script id="outputTemplate" type="text/template">
   </script>
 
-  <script src="skin/js/scripts.min.js"></script>
+  <script type="text/javascript">
+    // Add a script element as a child of the body
+    function downloadJSAtOnload() {
+      var element = document.createElement('script');
+      element.src = 'skin/js/scripts.min.js';
+      document.body.appendChild(element);
+    }
+
+    // Check for browser support of event handling capability
+    if (window.addEventListener) {
+      window.addEventListener("load", downloadJSAtOnload, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onload", downloadJSAtOnload);
+    } else {
+      window.onload = downloadJSAtOnload;
+    }
+</script>
 </body>
 
 </html>
