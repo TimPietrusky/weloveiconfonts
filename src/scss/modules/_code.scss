@@ -1,0 +1,20 @@
+/* background-color of pre */
+$minimalhighlight--color-alpha: #111;
+/* color of code */
+$minimalhighlight--color-beta: #fff;
+/* padding of pre */
+$minimalhighlight--unit-alpha: 1em;
+
+pre {
+  background: $minimalhighlight--color-alpha;
+  padding: $minimalhighlight--unit-alpha;
+  overflow: auto;
+  
+  code {
+    background: none;
+    padding: 0;
+    color: $minimalhighlight--color-beta;
+	white-space: pre;
+	word-spacing: normal;
+  }
+}

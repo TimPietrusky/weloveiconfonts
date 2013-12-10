@@ -1,0 +1,9 @@
+ul {
+	list-style-type: square;
+
+	&.clean {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}

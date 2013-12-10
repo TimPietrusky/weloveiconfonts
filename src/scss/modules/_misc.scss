@@ -1,0 +1,37 @@
+%center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  @include transform (translate(-50%, -50%));
+}
+
+
+@function reverse-lightness($color) {
+  
+  // Set a default value
+  $result: 0;
+  
+  // Get the lightness value in % from $color
+  $value: lightness($color);
+  
+  // If the $color is light
+  @if $value >= 50 {
+    // We return a darker version of $color
+    $result: scale-color($color, $lightness: -$value);
+    
+  // If the $color is dark
+  } @else {
+    // We return a lighter version of $color
+    $result: scale-color($color, $lightness: 100% - $value);
+  } 
+  
+  @return $result;
+}
+
+
+
+
+
+.align--center {
+  text-align: center;
+}

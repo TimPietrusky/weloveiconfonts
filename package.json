@@ -1,0 +1,30 @@
+{
+  "name": "WeLoveIconFonts",
+  "title": "We Love Icon Fonts",
+  "description": "A free & open source icon fonts hosting service for testing purposes.",
+  "url": "http://weloveiconfonts.com/",
+  "author": "Tim Pietrusky",
+  "copyright": "2013",
+  "version": "2.0.1",
+  "license": "VVL",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/TimPietrusky/weloveiconfonts.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-watch": "~0.4.4",
+    "connect-livereload": "~0.2.0",
+    "grunt-open": "~0.2.0",
+    "matchdep": "~0.1.2",
+    "grunt-sftp-deploy": "~0.0.9",
+    "grunt-concurrent": "~0.4.1",
+    "grunt-ftp-push": "~0.1.2",
+    "grunt-ftpush": "~0.3.3"
+  }
+}

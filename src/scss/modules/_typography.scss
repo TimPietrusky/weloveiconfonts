@@ -1,0 +1,50 @@
+h1 {
+  font-size: 3em;
+  line-height: 1.35em;
+  margin:.4em 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3em;
+  line-height: 1.05em;
+  letter-spacing:.05em;
+  padding:0 0 .5em 0;
+  margin:.25em 0 0 0;
+
+  > span {
+    font-size:1.2em;
+  }
+}
+
+h3 {
+  font-weight: bold;
+  letter-spacing:.05em;
+  padding-bottom: .15em;
+  margin:1.15em 0 .75em 0;
+  border-bottom:  .15em solid #999;
+}
+
+
+
+
+
+a {
+  color: $color-red;
+  text-decoration: none;
+  padding: .15em;
+
+  @include transition(color $default-transition, background $default-transition);
+
+  &:hover {
+    background: $color-purple;
+    color: #fff;
+  }
+}
+
+
+
+
+
+p {
+}

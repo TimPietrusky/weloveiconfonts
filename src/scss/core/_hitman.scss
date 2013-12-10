@@ -1,0 +1,21 @@
+.hitman__alpha {
+	color: #f47771;
+}
+
+.hitman__beta {
+	width: 25%;
+	float: left;
+}
+
+.hitman__gamma {
+	background: none !important;
+
+	&:hover {
+		background: none !important;
+	}
+}
+
+.hitman__delta {
+	text-align: left !important;
+	padding-left: 0 !important;
+}
