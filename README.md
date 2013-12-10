@@ -16,14 +16,6 @@ The next step is to create a version which suits the needs of the community. So 
 
 * Used as an integration method on [OpenWeb Icons](http://pfefferle.github.com/openwebicons/#weloveiconfonts)
 
-## It's optimized for "small" screens
-
-![We Love Icon Fonts - Optimized for small screens](https://raw.github.com/TimPietrusky/weloveiconfonts/master/img/weloveiconfonts_dribbble.jpg)
-
-## Sub Navigation to jump to specific icon font
-
-![We Love Icon Fonts - Sub Navigation to jump to specific icon font](https://raw.github.com/TimPietrusky/weloveiconfonts/master/img/weloveiconfonts_dribbble_iconfont_nav.jpg)
-
 ---
 
 ## Based on these open source projects
@@ -55,4 +47,4 @@ The next step is to create a version which suits the needs of the community. So 
 
 ---
 
-Handcrafted 2012 & more by [@TimPietrusky](http://twitter.com/TimPietrusky) in Germany.
+Handcrafted 2012 - 2013 by [@TimPietrusky](http://twitter.com/TimPietrusky) in Germany.
