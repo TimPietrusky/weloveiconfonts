@@ -1,3 +1,0 @@
-        <p>This is not like <a href="http://fontello.com/" target="_blank">Fontello</a>, because you <b>can't generate</b> Icon Fonts here.</p>
-        <p>Just <b>choose</b> your favorite <b>Icon Fonts</b> and use them on your website. It's really that simple!</p>
-        <p>"Yes" ok, but <a href="#how-to-use">how does this work?</a></p>
