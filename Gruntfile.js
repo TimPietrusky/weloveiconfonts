@@ -253,7 +253,7 @@ module.exports = function (grunt) {
           authKey: 'key1'
         },
         src: 'app',
-        dest: '/var/www/beta.weloveiconfonts.com',
+        dest: '/var/www/weloveiconfonts.com',
         exclusions: ['app/.gitignore']
       }
     },
@@ -273,7 +273,7 @@ module.exports = function (grunt) {
           authKey: 'key1'
         },
         src: 'app',
-        dest: '/var/www/beta.weloveiconfonts.com',
+        dest: '/var/www/weloveiconfonts.com',
         exclusions: ['app/.gitignore'],
         server_sep: '/'
       }
