@@ -5104,8 +5104,7 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #fff;
-  background: #12ed52;
+  color: #67f390;
   padding: .25em;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -5113,18 +5112,18 @@ a:active {
   transition: all 0.3s ease-in-out;
 }
 
-/* line 11, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 10, ../../../src/scss/core/_weloveiconfonts.scss */
 a:hover {
-  color: #12ed52;
-  background: #fff;
+  background: #67f390;
+  color: #fff;
 }
 
-/* line 16, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 15, ../../../src/scss/core/_weloveiconfonts.scss */
 p, ul {
   margin: .25em 0 .45em 0;
 }
 
-/* line 20, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 19, ../../../src/scss/core/_weloveiconfonts.scss */
 hr {
   background: none;
   border: none;
@@ -5132,44 +5131,44 @@ hr {
   margin: 2.15em 0 1.75em 0;
 }
 
-/* line 27, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 26, ../../../src/scss/core/_weloveiconfonts.scss */
 article {
   margin-top: 0;
 }
 
-/* line 31, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 30, ../../../src/scss/core/_weloveiconfonts.scss */
 article[data-high] {
   margin-bottom: 2em;
 }
 
-/* line 35, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 34, ../../../src/scss/core/_weloveiconfonts.scss */
 article[data-high="1"] {
   margin-bottom: 5em;
   padding-bottom: 4em;
   border-bottom: .5em solid #999;
 }
 
-/* line 42, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 41, ../../../src/scss/core/_weloveiconfonts.scss */
 article[data-high="2"] {
   margin-bottom: 5em;
   padding-bottom: 4em;
   border-bottom: .5em solid #999;
 }
-/* line 47, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 46, ../../../src/scss/core/_weloveiconfonts.scss */
 article[data-high="2"].last {
   border-bottom: none;
 }
 
-/* line 54, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 53, ../../../src/scss/core/_weloveiconfonts.scss */
 article[data-high="4"] div {
   padding: 1.5em 1em;
 }
-/* line 58, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 57, ../../../src/scss/core/_weloveiconfonts.scss */
 article[data-high="4"] a {
   border: none;
 }
 
-/* line 63, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 62, ../../../src/scss/core/_weloveiconfonts.scss */
 article[data-high="5"] {
   background: #71bdf4;
   border-top: 0.25em dashed white;
@@ -5177,58 +5176,58 @@ article[data-high="5"] {
   padding: 4em 0;
   box-shadow: 0 0 0 .75em #71bdf4;
 }
-/* line 70, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 69, ../../../src/scss/core/_weloveiconfonts.scss */
 article[data-high="5"] h2 {
   color: #fff;
 }
 
-/* line 75, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 74, ../../../src/scss/core/_weloveiconfonts.scss */
 section {
   padding: 0 1em;
 }
 
-/* line 79, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 78, ../../../src/scss/core/_weloveiconfonts.scss */
 div[data-high="1"] {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 0.45em rgba(0, 0, 0, 0.2);
   padding: .0015em .5em .35em .5em;
 }
 
-/* line 85, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 84, ../../../src/scss/core/_weloveiconfonts.scss */
 section[data-valign='center'] {
   text-align: center;
 }
 
-/* line 89, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 88, ../../../src/scss/core/_weloveiconfonts.scss */
 section[data-valign='right'] {
   text-align: right;
 }
 
-/* line 93, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 92, ../../../src/scss/core/_weloveiconfonts.scss */
 section[data-name='preview'] {
   padding-bottom: 1.85em;
 }
-/* line 96, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 95, ../../../src/scss/core/_weloveiconfonts.scss */
 section[data-name='preview'].minimal {
   max-height: 7.25em;
   overflow-y: auto;
 }
-/* line 101, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 100, ../../../src/scss/core/_weloveiconfonts.scss */
 section[data-name='preview'] li {
   cursor: pointer;
 }
 
-/* line 106, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 105, ../../../src/scss/core/_weloveiconfonts.scss */
 section[data-name='output'] {
   padding-bottom: 1.85em;
 }
 
-/* line 110, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 109, ../../../src/scss/core/_weloveiconfonts.scss */
 footer {
   height: 10em;
 }
 
-/* line 115, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 114, ../../../src/scss/core/_weloveiconfonts.scss */
 pre,
 textarea {
   font-family: 'Source Code Pro', monospace;
@@ -5240,46 +5239,46 @@ textarea {
   line-height: 1.75em;
 }
 
-/* line 125, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 124, ../../../src/scss/core/_weloveiconfonts.scss */
 .plain {
   width: 100%;
   display: block;
   opacity: 0;
 }
 
-/* line 131, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 130, ../../../src/scss/core/_weloveiconfonts.scss */
 pre {
   width: 100%;
 }
-/* line 135, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 134, ../../../src/scss/core/_weloveiconfonts.scss */
 pre[data-type="1"] {
   border: .175em solid #999;
 }
-/* line 138, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 137, ../../../src/scss/core/_weloveiconfonts.scss */
 pre[data-type="1"].output {
   border-color: #fff;
 }
-/* line 144, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 143, ../../../src/scss/core/_weloveiconfonts.scss */
 pre span {
   color: #f47771;
   font-weight: bold;
 }
-/* line 148, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 147, ../../../src/scss/core/_weloveiconfonts.scss */
 pre span.url {
   color: #718df4;
 }
-/* line 152, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 151, ../../../src/scss/core/_weloveiconfonts.scss */
 pre span.css {
   color: #b871f4;
 }
 
-/* line 158, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 157, ../../../src/scss/core/_weloveiconfonts.scss */
 pre[data-text] {
   position: relative;
   margin-top: 2em;
 }
 
-/* line 163, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 162, ../../../src/scss/core/_weloveiconfonts.scss */
 pre[data-text]:after {
   content: attr(data-text);
   top: -1.25em;
@@ -5287,12 +5286,12 @@ pre[data-text]:after {
   color: #666;
 }
 
-/* line 170, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 169, ../../../src/scss/core/_weloveiconfonts.scss */
 ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 174, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 173, ../../../src/scss/core/_weloveiconfonts.scss */
 ul li {
   font-size: 1.5em;
   position: relative;
@@ -5308,7 +5307,7 @@ ul li {
   transition: all 0.25s ease-out;
 }
 
-/* line 188, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 187, ../../../src/scss/core/_weloveiconfonts.scss */
 li.active {
   background: #000;
   color: #fff;
@@ -5318,79 +5317,79 @@ li.active {
   transition: all 0.25s ease-out;
 }
 
-/* line 194, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 193, ../../../src/scss/core/_weloveiconfonts.scss */
 [class*="typicons-"]:before {
   font-family: 'Typicons', sans-serif;
   font-size: 1.25em;
   line-height: 1.75em;
 }
 
-/* line 200, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 199, ../../../src/scss/core/_weloveiconfonts.scss */
 [class*="openwebicons-"]:before {
   font-family: 'OpenWeb Icons', sans-serif;
 }
 
-/* line 204, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 203, ../../../src/scss/core/_weloveiconfonts.scss */
 [class*="brandico-"]:before {
   font-family: 'brandico', sans-serif;
 }
 
-/* line 208, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 207, ../../../src/scss/core/_weloveiconfonts.scss */
 [class*="maki-"]:before {
   font-family: 'maki', sans-serif;
 }
 
-/* line 212, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 211, ../../../src/scss/core/_weloveiconfonts.scss */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 
-/* line 216, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 215, ../../../src/scss/core/_weloveiconfonts.scss */
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
 
-/* line 220, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 219, ../../../src/scss/core/_weloveiconfonts.scss */
 [class*="fontelico-"]:before {
   font-family: 'fontelico', sans-serif;
 }
 
-/* line 224, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 223, ../../../src/scss/core/_weloveiconfonts.scss */
 [class*="iconicfill-"]:before {
   font-family: 'IconicFill', sans-serif;
 }
 
-/* line 228, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 227, ../../../src/scss/core/_weloveiconfonts.scss */
 [class*="zocial-"]:before {
   font-family: 'zocial', sans-serif;
 }
 
-/* line 232, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 231, ../../../src/scss/core/_weloveiconfonts.scss */
 .example {
   font-size: 2.5em;
   line-height: 1.5em;
 }
-/* line 236, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 235, ../../../src/scss/core/_weloveiconfonts.scss */
 .example li {
   width: 20%;
 }
 
-/* line 241, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 240, ../../../src/scss/core/_weloveiconfonts.scss */
 .meta {
   display: none;
   font-size: .65em;
 }
 
-/* line 248, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 247, ../../../src/scss/core/_weloveiconfonts.scss */
 #how-to-use div > section {
   padding: 0;
 }
-/* line 251, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 250, ../../../src/scss/core/_weloveiconfonts.scss */
 #how-to-use div > section > div {
   padding: 0;
 }
 
-/* line 259, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 258, ../../../src/scss/core/_weloveiconfonts.scss */
 textarea[data-name="text"],
 section[data-name="preview"] {
   width: 100%;
@@ -5398,23 +5397,23 @@ section[data-name="preview"] {
   overflow-x: hidden;
   resize: none;
 }
-/* line 265, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 264, ../../../src/scss/core/_weloveiconfonts.scss */
 textarea[data-name="text"]::-webkit-scrollbar,
 section[data-name="preview"]::-webkit-scrollbar {
   width: 1.25em;
 }
-/* line 269, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 268, ../../../src/scss/core/_weloveiconfonts.scss */
 textarea[data-name="text"]::-webkit-scrollbar-track,
 section[data-name="preview"]::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 273, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 272, ../../../src/scss/core/_weloveiconfonts.scss */
 textarea[data-name="text"]::-webkit-scrollbar-thumb,
 section[data-name="preview"]::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 280, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 279, ../../../src/scss/core/_weloveiconfonts.scss */
 button,
 pre,
 textarea {
@@ -5434,25 +5433,25 @@ textarea {
   -o-transform: translateZ(0);
   transform: translateZ(0);
 }
-/* line 293, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 292, ../../../src/scss/core/_weloveiconfonts.scss */
 button[data-type="2"],
 pre[data-type="2"],
 textarea[data-type="2"] {
   background: #f4d871;
 }
-/* line 296, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 295, ../../../src/scss/core/_weloveiconfonts.scss */
 button[data-type="3"],
 pre[data-type="3"],
 textarea[data-type="3"] {
   background: #f47771;
 }
-/* line 300, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 299, ../../../src/scss/core/_weloveiconfonts.scss */
 button[data-type="4"],
 pre[data-type="4"],
 textarea[data-type="4"] {
   background: #71bdf4;
 }
-/* line 305, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 304, ../../../src/scss/core/_weloveiconfonts.scss */
 button:active, button:focus,
 pre:active,
 pre:focus,
@@ -5461,7 +5460,7 @@ textarea:focus {
   box-shadow: none;
 }
 
-/* line 310, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 309, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator {
   position: fixed;
   width: 100%;
@@ -5477,56 +5476,56 @@ textarea:focus {
   transition: all 0.35s ease-in-out;
   font-size: 1.75em;
 }
-/* line 322, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 321, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator .plain {
   height: 3.25em;
 }
-/* line 325, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 324, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator .plain.active {
   font-weight: bold;
   box-shadow: inset 0 0 0 1em #71bdf4;
   opacity: 1;
 }
-/* line 332, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 331, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator .entypo-heart {
   color: #f47771;
   background: #fff;
   padding: .25em;
 }
-/* line 338, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 337, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator div {
   padding: 0 .15em;
 }
-/* line 341, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 340, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator div > section {
   padding: 0;
 }
-/* line 344, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 343, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator div > section > div {
   padding: 0;
 }
-/* line 348, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 347, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator div > section a {
   width: 33%;
 }
-/* line 355, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 354, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator > section > div,
 .creator > section > div:nth-child(3) {
   width: 33.3%;
 }
-/* line 360, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 359, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator:hover {
   color: white;
 }
-/* line 363, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 362, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator:hover a {
   color: white;
 }
-/* line 368, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 367, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator:hover textarea {
   background: rgba(255, 255, 255, 0.15);
 }
-/* line 373, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 372, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator a {
   color: inherit;
   width: 25%;
@@ -5537,17 +5536,17 @@ textarea:focus {
   border: none;
   background: transparent;
 }
-/* line 383, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 382, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator a:first-child {
   line-height: .95em;
   padding-top: .25em;
 }
-/* line 388, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 387, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator a:hover {
   color: black;
   background: rgba(255, 255, 255, 0.85);
 }
-/* line 394, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 393, ../../../src/scss/core/_weloveiconfonts.scss */
 .creator textarea {
   font-size: .65em;
   line-height: 2.15em;
@@ -5561,14 +5560,14 @@ textarea:focus {
   transition: opacity 0.25s ease-in-out;
 }
 
-/* line 406, ../../../src/scss/core/_weloveiconfonts.scss */
+/* line 405, ../../../src/scss/core/_weloveiconfonts.scss */
 .highlight {
   text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.2);
 }
 
 /* "normal" screens */
 @media screen and (max-width: 79em) {
-  /* line 413, ../../../src/scss/core/_weloveiconfonts.scss */
+  /* line 412, ../../../src/scss/core/_weloveiconfonts.scss */
   section,
   footer {
     padding: 0 .15em;
@@ -5577,28 +5576,28 @@ textarea:focus {
 /* "small" screens */
 @media screen and (max-width: 44em) {
   font-size: .925em;
-  /* line 423, ../../../src/scss/core/_weloveiconfonts.scss */
+  /* line 422, ../../../src/scss/core/_weloveiconfonts.scss */
   h1,
   article[data-text]:after {
     font-size: 2.3em;
   }
 
-  /* line 427, ../../../src/scss/core/_weloveiconfonts.scss */
+  /* line 426, ../../../src/scss/core/_weloveiconfonts.scss */
   ul {
     padding: 0;
   }
-  /* line 430, ../../../src/scss/core/_weloveiconfonts.scss */
+  /* line 429, ../../../src/scss/core/_weloveiconfonts.scss */
   ul li {
     width: 25%;
     font-size: 1.25em;
   }
 
-  /* line 436, ../../../src/scss/core/_weloveiconfonts.scss */
+  /* line 435, ../../../src/scss/core/_weloveiconfonts.scss */
   section > div {
     padding: 0 .5em;
   }
 
-  /* line 440, ../../../src/scss/core/_weloveiconfonts.scss */
+  /* line 439, ../../../src/scss/core/_weloveiconfonts.scss */
   .creator {
     width: 100%;
     height: auto;
@@ -5607,22 +5606,22 @@ textarea:focus {
     bottom: 0;
     font-size: 1.25em;
   }
-  /* line 448, ../../../src/scss/core/_weloveiconfonts.scss */
+  /* line 447, ../../../src/scss/core/_weloveiconfonts.scss */
   .creator .creator__social {
     display: none;
   }
-  /* line 452, ../../../src/scss/core/_weloveiconfonts.scss */
+  /* line 451, ../../../src/scss/core/_weloveiconfonts.scss */
   .creator textarea {
     font-size: .65em;
     background: rgba(255, 255, 255, 0.6);
   }
-  /* line 461, ../../../src/scss/core/_weloveiconfonts.scss */
+  /* line 460, ../../../src/scss/core/_weloveiconfonts.scss */
   .creator section > div:nth-child(1),
   .creator section > div:nth-child(2),
   .creator section > div:nth-child(3) {
     width: 100%;
   }
-  /* line 466, ../../../src/scss/core/_weloveiconfonts.scss */
+  /* line 465, ../../../src/scss/core/_weloveiconfonts.scss */
   .creator a {
     vertical-align: bottom;
   }

@@ -1,16 +1,15 @@
 a,
 a:visited,
 a:active {
-  text-decoration:none;
-  color: #fff;
-  background: darken(#71f497, 20%);
+  text-decoration: none;
+  color: $color-green;
   padding: .25em;
   @include transition(all .3s ease-in-out);
 }
 
 a:hover {
-  color: darken(#71f497, 20%);
-  background: #fff;
+  background: $color-green;
+  color: #fff;
 }
 
 p, ul {
