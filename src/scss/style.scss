@@ -33,7 +33,6 @@
         'modules/inputs',
         'modules/lists',
         'modules/typography',
-        'modules/app',
         'modules/print',
         'modules/code',
         'modules/box'
@@ -49,4 +48,15 @@
 @import 'core/crystallo',
         'core/hitman',
         'core/weloveiconfonts'
+;
+
+
+
+
+
+
+//----------------------------------*\
+// APP
+//----------------------------------*/
+@import 'modules/app'
 ;

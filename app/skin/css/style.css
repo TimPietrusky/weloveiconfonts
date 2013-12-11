@@ -4630,8 +4630,8 @@ h2 {
   font-size: 3em;
   line-height: 1.05em;
   letter-spacing: .05em;
-  padding: 0 0 .15em 0;
-  margin: 0;
+  padding: 0 0 .45em 0;
+  margin: 0 0 .15em 0;
 }
 /* line 15, ../../../src/scss/modules/_typography.scss */
 h2 > span {
@@ -4661,26 +4661,6 @@ a {
 a:hover {
   background: #d8a3bc;
   color: #fff;
-}
-
-/* line 4, ../../../src/scss/modules/_app.scss */
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 9, ../../../src/scss/modules/_app.scss */
-body {
-  font: 400 1.2em/1.6em "Lato", sans-serif;
-  color: #333;
-  background-color: white;
-}
-
-/* line 17, ../../../src/scss/modules/_app.scss */
-*::-moz-selection, *::selection {
-  color: rgba(0, 0, 0, 0.9);
-  background: rgba(255, 255, 255, 0.5);
 }
 
 @media print {
@@ -5178,8 +5158,8 @@ article[data-high="4"] a {
 /* line 62, ../../../src/scss/core/_weloveiconfonts.scss */
 article[data-high="5"] {
   background: #71bdf4;
-  border-top: 0.25em dashed white;
-  border-bottom: 0.25em dashed white;
+  border-top: .25em dashed #fff;
+  border-bottom: .25em dashed #fff;
   padding: 4em 0;
   box-shadow: 0 0 0 .75em #71bdf4;
 }
@@ -5632,4 +5612,48 @@ textarea:focus {
   .creator a {
     vertical-align: bottom;
   }
+}
+/* line 4, ../../../src/scss/modules/_app.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 9, ../../../src/scss/modules/_app.scss */
+body {
+  font: 400 1.2em/1.6em "Lato", sans-serif;
+  color: #333;
+  background-color: white;
+}
+
+/* line 17, ../../../src/scss/modules/_app.scss */
+*::-moz-selection, *::selection {
+  color: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 24, ../../../src/scss/modules/_app.scss */
+.icon-font--header {
+  background: #ddd;
+  padding-top: .65em;
+}
+/* line 28, ../../../src/scss/modules/_app.scss */
+.icon-font--header a {
+  color: #67f390;
+  background: #fff;
+}
+/* line 32, ../../../src/scss/modules/_app.scss */
+.icon-font--header a:hover {
+  color: #fff;
+  background: #67f390;
+}
+/* line 38, ../../../src/scss/modules/_app.scss */
+.icon-font--header h2 {
+  background: #fff;
+  padding: .05em;
+}
+/* line 44, ../../../src/scss/modules/_app.scss */
+.icon-font--header button[data-type="2"] {
+  background: #666;
 }

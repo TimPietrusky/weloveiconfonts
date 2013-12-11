@@ -19,3 +19,30 @@ body {
     background: rgba(255, 255, 255, .5);
   } 
 }
+
+
+.icon-font--header {
+  background: #ddd;
+  padding-top: .65em;
+
+  a {
+    color: $color-green;
+    background: #fff;
+
+    &:hover {
+      color: #fff;
+      background: $color-green;
+    }
+  }
+
+  h2 {
+    background: #fff;
+    padding: .05em;
+  }
+
+  button {
+    &[data-type="2"] {
+      background: #666;
+    }
+  }
+}
