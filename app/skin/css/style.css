@@ -5239,7 +5239,7 @@ pre,
 textarea {
   font-family: 'Source Code Pro', monospace;
   margin: 0;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.7);
   padding: 1.75em .5em 0 1em;
   white-space: pre-wrap;
   color: black;
