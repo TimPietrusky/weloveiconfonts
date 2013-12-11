@@ -4774,6 +4774,13 @@ pre code {
   word-spacing: normal;
 }
 
+/* line 1, ../../../src/scss/modules/_box.scss */
+.box--title {
+  background: #eee;
+  padding: 2em 0;
+  text-align: center;
+}
+
 /*
  * crystallo
  * ultra responsive to be a responsive css framework.
