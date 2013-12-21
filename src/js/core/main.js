@@ -49,6 +49,10 @@
     },
 
     toggleView : function() {
+    },
+
+    comparator: function (model) {
+      return model.get('name');
     }
   });
 
