@@ -16,15 +16,19 @@
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-compass": "~0.6.0",
     "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-connect": "~0.3.0",
+    "grunt-contrib-connect": "~0.5.0",
     "grunt-contrib-jshint": "~0.4.3",
-    "grunt-contrib-watch": "~0.4.4",
-    "connect-livereload": "~0.2.0",
-    "grunt-open": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "connect-livereload": "~0.3.1",
+    "grunt-open": "~0.2.2",
     "matchdep": "~0.1.2",
     "grunt-sftp-deploy": "~0.0.9",
     "grunt-concurrent": "~0.4.1",
     "grunt-ftp-push": "~0.1.2",
-    "grunt-ftpush": "~0.3.3"
+    "grunt-ftpush": "~0.3.3",
+    "grunt-hashres": "~0.3.4",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "assemble": "~0.4.33"
   }
 }

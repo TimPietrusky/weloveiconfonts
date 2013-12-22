@@ -10,11 +10,11 @@ $default-transition: $default-transition-duration $default-transition-function;
 
 
 $color-purple: #d8a3bc;
-$color-red: darken(#fbb5ae, 5%);
+$color-red: darken(#fbb5ae, 5%); 
 $color-yellow: #ffd1a9;
 $color-yellow-light: #fdffa8;
-$color-blue: #2ccac1;
-$color-cyan: #94e5ee;
-$color-green: #67f390;
+$color-blue: #2ccac1; 
+$color-cyan: #94e5ee; 
+$color-green: darken(#67f390, 15%); 
 $color-green-reversed: reverse-lightness($color-green);
 $color-pink: #f668ca;

@@ -170,8 +170,6 @@
      * Handle add / remove icon font to the collection
      * 
      * default : ' add'
-     *
-     * [TimPietrusky] #6: Give the ability to remove fonts from collection. 
      */
     addClicked : function(el) {
       var data = el.attr('data-collection');
@@ -217,7 +215,7 @@
       var counter = $('.creator .plain');
 
       if (this.selected > 0) {
-        counter.html(this.selected);
+        counter.html('Use ' + this.selected);
 
         if (!counter.hasClass('active')) {
           counter.addClass('active');

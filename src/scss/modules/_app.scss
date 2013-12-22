@@ -24,20 +24,19 @@ body {
 .icon-font--header {
   background: #ddd;
   padding-top: .65em;
+  padding-bottom: .65em;
 
   a {
-    color: $color-green;
     background: #fff;
 
     &:hover {
-      color: #fff;
       background: $color-green;
     }
   }
 
   h2 {
     background: #fff;
-    padding: .05em;
+    padding: .115em .125em .175em .125em;
   }
 
   button {

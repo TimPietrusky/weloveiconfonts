@@ -51,7 +51,8 @@ module.exports = function (grunt) {
       js: [
         '<%= project.src %>/js/vendor/libs.js',
         '<%= project.src %>/js/vendor/ga.js',
-        '<%= project.src %>/js/core/*.js',
+        '<%= project.src %>/js/core/iconfonts.js',
+        '<%= project.src %>/js/core/main.js',
         '<%= project.src %>/js/*.js'
       ]
     },
@@ -97,6 +98,57 @@ module.exports = function (grunt) {
             return [lrSnippet, mountFolder(connect, 'app')];
           }
         }
+      }
+    },
+
+
+
+
+
+    /**
+     * Opens the web server in the browser
+     * https://github.com/jsoverson/grunt-open
+     */
+    open: {
+      server: {
+        path: 'http://weloveiconfonts.local'
+      }
+    },
+
+
+
+
+
+    /**
+     * Runs tasks against changed watched files
+     * https://github.com/gruntjs/grunt-contrib-watch
+     * Watching development files and run concat/compile tasks
+     * Livereload the browser once complete
+     */
+    watch: {
+      js: {
+        files: '<%= project.src %>/js/{,*/}*.js',
+        tasks: ['concat:dev', 'jshint']
+      },
+
+      html: {
+        files: [
+          '<%= project.src %>/{,*/}*.html',
+        ],
+        tasks: ['copy']
+      },
+
+      // The name of the subtask of watch
+      livereload: {
+        options: {
+          livereload: LIVERELOAD_PORT
+        },
+        files: [
+          '<%= project.src %>/{,*/}*.html',
+          '<%= project.skin %>/css/*.css',
+          '<%= project.skin %>/js/{,*/}*.js',
+          '<%= project.skin %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+        ]
       }
     },
 
@@ -168,11 +220,21 @@ module.exports = function (grunt) {
      * Compiles all Sass/SCSS files and appends project banner
      */
     compass: {
+      once: {
+        options: {
+          sassDir: '<%= project.src %>/scss',
+          cssDir: '<%= project.skin %>/css',
+          outputStyle: 'compressed',
+          environment: 'production'
+        }
+      },
       dev: {
         options: {
           sassDir: '<%= project.src %>/scss',
           cssDir: '<%= project.skin %>/css',
-          watch: true
+          watch: true,
+          outputStyle: 'compressed',
+          environment: 'production'
         }
       },
       dist: {
@@ -189,53 +251,40 @@ module.exports = function (grunt) {
 
 
 
-    /**
-     * Opens the web server in the browser
-     * https://github.com/jsoverson/grunt-open
-     */
-    open: {
-      server: {
-        path: 'http://weloveiconfonts.local'
-      }
-    },
-
-
-
-
-
-    /**
-     * Runs tasks against changed watched files
-     * https://github.com/gruntjs/grunt-contrib-watch
-     * Watching development files and run concat/compile tasks
-     * Livereload the browser once complete
-     */
-    watch: {
-      concat: {
-        files: '<%= project.src %>/js/{,*/}*.js',
-        tasks: ['concat:dev', 'jshint']
-      },
-      livereload: {
-        options: {
-          livereload: LIVERELOAD_PORT
-        },
-        files: [
-          '<%= project.app %>/{,*/}*.html',
-          '<%= project.skin %>/css/*.css',
-          '<%= project.skin %>/js/{,*/}*.js',
-          '<%= project.skin %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
-        ]
-      }
-    },
-
-
-
-
-
     /* 
      * We use "compass watch" and "watch" at the same time
      */
     concurrent: {
         target1: ['compass', 'watch']
+    },
+
+
+
+
+
+    clean: [
+      '<%= project.skin %>/css/*.css', 
+      '<%= project.skin %>/js/*.js'
+    ],
+
+
+
+
+
+    /*
+     * Copy folder/files from src to dest
+     * 
+     * https://github.com/gruntjs/grunt-contrib-copy
+     */
+    copy: {
+      main: {
+        expand: true,
+        flatten: true,
+        filter: 'isFile',
+        cwd: '<%= project.src %>',
+        src: 'index.html', 
+        dest: '<%= project.app %>/'
+      }
     },
 
 
@@ -264,6 +313,8 @@ module.exports = function (grunt) {
 
     /*
      * Deploy to a server with SFTP
+     *
+     * https://github.com/thrashr888/grunt-sftp-deploy
      */
     'sftp-deploy': {
       build: {
@@ -274,10 +325,56 @@ module.exports = function (grunt) {
         },
         src: 'app',
         dest: '/var/www/weloveiconfonts.com',
-        exclusions: ['app/.gitignore'],
+        exclusions: [
+          '<%= project.app %>/.gitignore',
+          '<%= project.app %>/api'
+        ],
         server_sep: '/'
       }
     },
+
+
+
+
+
+
+    hashres: {
+      // Global options
+      options: {
+        // Optional. Encoding used to read/write files. Default value 'utf8'
+        encoding: 'utf8',
+        // Optional. Format used to name the files specified in 'files' property.
+        // Default value: '${hash}.${name}.cache.${ext}'
+        fileNameFormat: '${hash}.${name}.${ext}',
+        // Optional. Should files be renamed or only alter tshe references to the files
+        // Use it with '${name}.${ext}?${hash} to get perfect caching without renaming your files
+        // Default value: true
+        renameFiles: true
+      },
+      
+      prod: {
+        // Specific options, override the global ones
+        options: {
+          // You can override encoding, fileNameFormat or renameFiles
+        },
+        // Files to hash
+        src: [
+          // WARNING: These files will be renamed!
+          '<%= project.skin %>/js/scripts.min.js',
+          '<%= project.skin %>/css/style.css'],
+        // File that refers to above files and needs to be updated with the hashed name
+        dest: '<%= project.app %>/index.html',
+      }
+    },
+
+
+
+
+
+
+
+
+
   });
 
 
@@ -289,6 +386,10 @@ module.exports = function (grunt) {
    * Run `grunt` on the command line
    */
   grunt.registerTask('default', [
+    'copy',
+    'clean',
+    'concat:dev',
+    'compass:once',
     'jshint',
     'connect:livereload',
     'open',
@@ -305,10 +406,12 @@ module.exports = function (grunt) {
    * Then compress all JS/CSS files
    */
   grunt.registerTask('build', [
+    'clean',
     'compass:dist',
     'jshint',
     'uglify',
+    'copy',
+    'hashres',
     'sftp-deploy'
   ]);
-
 };
