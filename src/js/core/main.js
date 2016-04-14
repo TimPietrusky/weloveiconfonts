@@ -13,7 +13,7 @@
 
   /***************************************************
    *
-   * Models 
+   * Models
    */
   App.Models.Icon = Backbone.Model.extend({
     initialize : function() {
@@ -21,7 +21,7 @@
     },
 
     /**
-     * Update and extend the data of the model. 
+     * Update and extend the data of the model.
      */
     update : function() {
       var normal_name = this.get('name').split('-');
@@ -38,7 +38,7 @@
 
   /***************************************************
    *
-   * Collections 
+   * Collections
    */
   App.Collections.Icons = Backbone.Collection.extend({
     model : App.Models.Icon,
@@ -63,7 +63,7 @@
 
   /***************************************************
    *
-   * Views 
+   * Views
    */
 
   /**
@@ -116,10 +116,10 @@
       this.$el.html(template);
       return this;
     }
-  }); 
+  });
 
   /**
-   * Your collections. 
+   * Your collections.
    */
   App.Views.Creator = Backbone.View.extend({
     tagName : 'div',
@@ -168,7 +168,7 @@
 
     /**
      * Handle add / remove icon font to the collection
-     * 
+     *
      * default : ' add'
      */
     addClicked : function(el) {
@@ -241,7 +241,7 @@
     },
 
     /**
-     * Toggle between full & minimal view for the icons. 
+     * Toggle between full & minimal view for the icons.
      */
     toggleView : function(e) {
       e.preventDefault();
@@ -271,10 +271,10 @@
       this.collected = $('.creator .plain');
       return this;
     }
-  }); 
+  });
 
   /**
-   * Your collections. 
+   * Your collections.
    */
   App.Views.Output = Backbone.View.extend({
     el : 'pre.output',
@@ -301,7 +301,7 @@
           url += model.get('family');
 
           body += "<span>/* " + model.get('family') + " */</span>\n"+
-            "[class*=\"" + model.get('family') + "-\"]:before {"+
+            "[class*=\"" + model.get('family') + "-\"]::before {"+
             "\n  <span class=\"css\">font-family: '" + model.get('font') + "', sans-serif;</span>"+
             "\n}\n\n";
 

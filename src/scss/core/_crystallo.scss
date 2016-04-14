@@ -2,7 +2,7 @@
  * crystallo
  * ultra responsive to be a responsive css framework.
  *
- * crystallo is a solid & simple responsive (not yet) framework 
+ * crystallo is a solid & simple responsive (not yet) framework
  * to help you kick-start any form of web application.
  *
  * Get it here
@@ -30,7 +30,7 @@ $crystallo-padding-left: $crystallo-padding;
 /*
  * Do you need IE <= 8 support?
  */
- $crystallo-ie: true; 
+ $crystallo-ie: true;
 
 
 
@@ -38,8 +38,8 @@ $crystallo-padding-left: $crystallo-padding;
  * The code starts here...
  */
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   @include box-sizing(border-box);
 }
 
@@ -106,21 +106,21 @@ section {
 
     section {
       padding: 0;
-      
+
       > div {
         padding: 0
       }
     }
   }
-} 
+}
 
 /* pseudo elements default stuff */
-article[data-high]:before,
-article[data-high]:after,
-article[data-text]:before,
-article[data-text]:after,
-pre[data-text]:before,
-pre[data-text]:after {
+article[data-high]::before,
+article[data-high]::after,
+article[data-text]::before,
+article[data-text]::after,
+pre[data-text]::before,
+pre[data-text]::after {
   content:'';
   position:absolute;
   top:0;
