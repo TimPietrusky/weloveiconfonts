@@ -117,7 +117,7 @@ textarea {
   background: rgba(255, 255, 255, .7);
   padding: 1.75em .5em 0 1em;
   white-space: pre-wrap;
-  color: rgba(0, 0, 0, 1);  
+  color: rgba(0, 0, 0, 1);
   line-height: 1.75em;
 }
 
@@ -159,7 +159,7 @@ pre[data-text] {
   margin-top:2em;
 }
 
-pre[data-text]:after {
+pre[data-text]::after {
   content:attr(data-text);
   top:-1.25em;
   letter-spacing:.05em;
@@ -226,7 +226,7 @@ section[data-name="preview"] {
   &::-webkit-scrollbar {
     width: 1.25em;
   }
- 
+
   &::-webkit-scrollbar-track {
     background: rgba(#000, .2);
   }
@@ -247,9 +247,9 @@ textarea {
   border:none;
   @include transition(all .1s ease-in-out);
   @include transform(translateZ(0));
-  
-  &[data-type="1"] {    
-    
+
+  &[data-type="1"] {
+
   }
   &[data-type="2"] {
     background: #f4d871;
@@ -261,7 +261,7 @@ textarea {
   &[data-type="4"] {
     background: #71bdf4;
   }
-  
+
   &:active,
   &:focus {
     box-shadow:none;
@@ -285,7 +285,7 @@ textarea {
     font-size:.925em;
 
     h1,
-    article[data-text]:after {
+    article[data-text]::after {
       font-size:2.3em;
     }
 
@@ -293,7 +293,7 @@ textarea {
       h2 {
         font-size: 2em;
       }
-    } 
+    }
 
     ul {
       padding: 0;

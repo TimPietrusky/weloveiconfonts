@@ -9,15 +9,15 @@
   a:visited {
     text-decoration: underline;
   }
-  a[href]:after {
+  a[href]::after {
     content: " (" attr(href) ")";
   }
-  abbr[title]:after {
+  abbr[title]::after {
     content: " (" attr(title) ")";
   }
-  .ir a:after,
-   a[href^="javascript:"]:after,
-   a[href^="#"]:after {
+  .ir a::after,
+   a[href^="javascript:"]::after,
+   a[href^="#"]::after {
     content: "";
   }
   pre,
