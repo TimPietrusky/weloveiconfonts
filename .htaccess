@@ -1,0 +1,38 @@
+<IfModule mod_rewrite.c>
+  #RewriteEngine On
+
+  #RewriteCond %{HTTP_HOST} ^api\.
+  #RewriteCond %{REQUEST_URI} !^/api/$ [NC]
+  #RewriteCond %{REQUEST_FILENAME} !-f
+  #RewriteRule (.*) /api/$1 [L]
+
+  #RewriteCond %{HTTP_HOST} ^/api
+  #RewriteCond %{REQUEST_URI} !/api/$ [NC]
+  #RewriteCond %{REQUEST_FILENAME} !-f
+  #RewriteRule (.*) /api/$1 [L]
+
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+</IfModule>
+
+
+<IfModule mod_deflate.c>
+
+  # Compression
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/javascript
+
+</IfModule>
+
+
+<IfModule mod_expires.c>
+
+    ## Expire after some time
+    <FilesMatch "\.(jpg|jpeg|gif|png|css|woff|js|eot|svg|ttf)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 1 month"
+    </FilesMatch>
+
+</IfModule>
