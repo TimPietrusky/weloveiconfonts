@@ -46,7 +46,7 @@ class Fonts {
 
     'iconicfill' => array(
       'family' => 'IconicFill',
-      'filename' => 'iconic_fill',
+      'filename' => 'iconicfill',
       'svgID' => 'IconicFill',
       'weight' => 'normal',
       'style' => 'normal',
@@ -54,7 +54,7 @@ class Fonts {
 
     'iconicstroke' => array(
       'family' => 'IconicStroke',
-      'filename' => 'iconic_stroke',
+      'filename' => 'iconicstroke',
       'svgID' => 'IconicStroke',
       'weight' => 'normal',
       'style' => 'normal',
