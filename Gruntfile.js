@@ -44,6 +44,7 @@ module.exports = function (grunt) {
       src: 'src',
       src_js_vendor : '<%= project.src %>/js/vendor',
       app: 'app',
+      index: 'index.php',
       skin: '<%= project.app %>/skin',
       css: [
         '<%= project.src %>/scss/style.scss'
@@ -51,7 +52,7 @@ module.exports = function (grunt) {
       js: [
         '<%= project.src %>/js/vendor/libs.js',
         '<%= project.src %>/js/vendor/ga.js',
-        '<%= project.src %>/js/core/iconfonts.js',
+        // '<%= project.src %>/js/core/iconfonts.js',
         '<%= project.src %>/js/core/main.js',
         '<%= project.src %>/js/*.js'
       ]
@@ -133,7 +134,7 @@ module.exports = function (grunt) {
 
       html: {
         files: [
-          '<%= project.src %>/{,*/}*.html',
+          '<%= project.src %>/{,*/}*.php',
         ],
         tasks: ['copy']
       },
@@ -144,7 +145,7 @@ module.exports = function (grunt) {
           livereload: LIVERELOAD_PORT
         },
         files: [
-          '<%= project.src %>/{,*/}*.html',
+          '<%= project.src %>/{,*/}*.php',
           '<%= project.skin %>/css/*.css',
           '<%= project.skin %>/js/{,*/}*.js',
           '<%= project.skin %>/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -282,8 +283,17 @@ module.exports = function (grunt) {
         flatten: true,
         filter: 'isFile',
         cwd: '<%= project.src %>',
-        src: 'index.html', 
+        src: '<%= project.index %>', 
         dest: '<%= project.app %>/'
+      },
+
+      iconfonts: {
+        expand: true,
+        flatten: false,
+        filter: 'isFile',
+        cwd: '<%= project.src %>',
+        src: 'js/core/iconfonts.json', 
+        dest: '<%= project.app %>/skin/'
       }
     },
 
@@ -363,7 +373,7 @@ module.exports = function (grunt) {
           '<%= project.skin %>/js/scripts.min.js',
           '<%= project.skin %>/css/style.css'],
         // File that refers to above files and needs to be updated with the hashed name
-        dest: '<%= project.app %>/index.html',
+        dest: '<%= project.app %>/<%= project.index %>',
       }
     },
 
@@ -387,6 +397,7 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'copy',
+    'copy:iconfonts',
     'clean',
     'concat:dev',
     'compass:once',
@@ -411,6 +422,7 @@ module.exports = function (grunt) {
     'jshint',
     'uglify',
     'copy',
+    'copy:iconfonts',
     'hashres',
     'sftp-deploy'
   ]);

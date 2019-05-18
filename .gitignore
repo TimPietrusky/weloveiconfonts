@@ -2,3 +2,4 @@
 sftp-config.json
 .ftppass
 node_modules/
+.convert.js

@@ -1,0 +1,72 @@
+[
+  {
+    "name" : "Brandico",
+    "description" : "Crowdsourced collection of <b>web brands</b> by <a href=\"http://fontello.com/\" target=\"_blank\">fontello</a>.",
+    "family" : "brandico", 
+    "font" : "brandico", 
+    "selected" : false
+  },
+  {
+    "name" : "entypo",
+    "description" : "A set of 250+ carefully crafted pictograms by <a href=\"http://danielbruce.se/\" target=\"_blank\">Daniel Bruce</a>.",
+    "family" : "entypo", 
+    "font" : "entypo", 
+    "selected" : false
+  },
+  {
+    "name" : "Font Awesome",
+    "description" : "The iconic font designed for use with Twitter Bootstrap by <a href=\"http://fortawesome.github.com/Font-Awesome/\" target=\"_blank\">Dave Gandy</a>.",
+    "family" : "fontawesome", 
+    "font" : "FontAwesome",
+    "selected" : false
+  },
+  {
+    "name" : "Fontelico",
+    "description" : "A bunch of emoticons, loading- and browser-icons are in this awesome collection by <a href=\"http://fontello.com/\" target=\"_blank\">fontello</a>.",
+    "family" : "fontelico", 
+    "font" : "fontelico",
+    "selected" : false
+  },
+  {
+    "name" : "Iconic Fill",
+    "description" : "Icons should not just be clear and attractive, they should be easy and flexible to work with! By <a href=\"http://somerandomdude.com/work/open-iconic/\" target=\"_blank\">somerandomdude</a>.",
+    "family" : "iconicfill", 
+    "font" : "IconicFill",
+    "selected" : false
+  },
+  {
+    "name" : "Iconic Stroke",
+    "description" : "Icons should not just be clear and attractive, they should be easy and flexible to work with! By <a href=\"http://somerandomdude.com/work/open-iconic/\" target=\"_blank\">somerandomdude</a>.",
+    "family" : "iconicstroke", 
+    "font" : "IconicStroke",
+    "selected" : false
+  },
+  {
+    "name" : "Maki",
+    "description" : "It's a clean point of interest icon set made for web cartography by <a href=\"http://mapbox.com/\" target=\"_blank\">MapBox</a>.",
+    "family" : "maki", 
+    "font" : "maki",
+    "selected" : false
+  },
+  {
+    "name" : "OpenWeb Icons",
+    "description" : "Be proud of using Open Web Standards and show it to the world... by <a href=\"http://notizblog.org/\" target=\"_blank\">Matthias Pfefferle</a>.",
+    "family" : "openwebicons",
+    "font" : "OpenWeb Icons",
+    "selected" : false
+  },
+  {
+    "name" : "Typicons",
+    "description" : "All-purpose icons by <a href=\"http://typicons.com/\" target=\"_blank\">Stephen Hutchings</a>.",
+    "family" : "typicons", 
+    "font" : "Typicons",
+    "selected" : false
+  },
+  {
+    "name" : "zocial",
+    "description" : "A huge collection of zocial & brand icons by <a href=\"http://smcllns.com/\" target=\"_blank\">Sam Collins</a>.",
+    "family" : "zocial", 
+    "font" : "zocial",
+    "selected" : false
+  }
+]

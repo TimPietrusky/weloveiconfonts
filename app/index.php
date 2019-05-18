@@ -54,99 +54,32 @@
     </section>
   </article>
 
-<!-- Brandico -->
-  <article class="brandico" id="brandico" data-high="2" data-text="">
-    <section data-cols="2" class="icon-font--header">
-      <div>
-        <h2>Brandico</h2>
-        <p>Crowdsourced collection of <b>web brands</b> by <a href="http://fontello.com/" target="_blank">fontello</a>.</p>
-      </div>
-      <div>
-        <button class="add" data-type="2" data-collection="brandico"><span class="fontawesome-heart"></span>  add</button>
-      </div>
-    </section>
 
-    <section data-name="preview" data-cols="1" data-valign="center">
-      <div></div>
-    </section>
-  </article>
-  
-<!-- entypo -->
-  <article class="entypo" id="entypo" data-high="2" data-text="">
+
+
+
+  <?php 
+    // Load the available icon fonts
+    $iconfonts = file_get_contents('skin/js/core/iconfonts.json');
+    $data = json_decode($iconfonts);
+  ?>
+
+  <?php 
+
+    // Create each icon font 
+
+  ?>
+  <?php foreach($data as $iconfont): ?>
+
+  <!-- <?php echo $iconfont->family; ?> -->
+  <article class="<?php echo $iconfont->family; ?>" id="<?php echo $iconfont->family; ?>" data-high="2" data-text="">
     <section data-cols="2" class="icon-font--header">
       <div>
-        <h2>entypo</h2>
-        <p>A set of 250+ carefully crafted pictograms by <a href="http://danielbruce.se/" target="_blank">Daniel Bruce</a>.</p>
+        <h2><?php echo $iconfont->name; ?></h2>
+        <p><?php echo $iconfont->description; ?></p>
       </div>
       <div>
-        <button class="add" data-type="2" data-collection="entypo"><span class="fontawesome-heart"></span>  add</button>
-      </div>
-    </section>
-    
-    <section data-name="preview" data-cols="1" data-valign="center">
-      <div></div>
-    </section>
-  </article>
-  
-<!-- fontawesome -->
-  <article class="fontawesome" id="fontawesome" data-high="2" data-text="">
-    <section data-cols="2" class="icon-font--header">
-      <div>
-        <h2>Font Awesome</h2>
-        <p>The iconic font designed for use with Twitter Bootstrap by <a href="http://fortawesome.github.com/Font-Awesome/" target="_blank">Dave Gandy</a>.</p>
-      </div>
-      <div>
-        <button class="add" data-type="2" data-collection="fontawesome"><span class="fontawesome-heart"></span>  add</button>
-      </div>
-    </section>
-    
-    <section data-name="preview" data-cols="1" data-valign="center">
-      <div></div>
-    </section>
-  </article>
-  
-<!-- fontelico -->
-  <article class="fontelico" id="fontelico" data-high="2" data-text="">
-    <section data-cols="2" class="icon-font--header">
-      <div>
-        <h2>Fontelico</h2>
-        <p>A bunch of emoticons, loading- and browser-icons are in this awesome collection by <a href="http://fontello.com/" target="_blank">fontello</a>.</p>
-      </div>
-      <div>
-        <button class="add" data-type="2" data-collection="fontelico"><span class="fontawesome-heart"></span>  add</button>
-      </div>
-    </section>
-    
-    <section data-name="preview" data-cols="1" data-valign="center">
-      <div></div>
-    </section>
-  </article>
-  
-<!-- maki -->
-  <article class="maki" id="maki" data-high="2" data-text="">
-    <section data-cols="2" class="icon-font--header">
-      <div>
-        <h2>Maki</h2>
-        <p>It's a clean point of interest icon set made for web cartography by <a href="http://mapbox.com/" target="_blank">MapBox</a>.</p>
-      </div>
-      <div>
-        <button class="add" data-type="2" data-collection="maki"><span class="fontawesome-heart"></span>  add</button>
-      </div>
-    </section>
-    <section data-name="preview" data-cols="1" data-valign="center">
-      <div></div>
-    </section>
-  </article>
-  
-<!-- openwebicons -->
-  <article class="openwebicons" id="openwebicons" data-high="2" data-text="">
-    <section data-cols="2" class="icon-font--header">
-      <div>
-        <h2>OpenWeb Icons</h2>
-        <p>Be proud of using Open Web Standards and show it to the world... by <a href="http://notizblog.org/" target="_blank">Matthias Pfefferle</a>.</p>
-      </div>
-      <div>
-        <button class="add" data-type="2" data-collection="openwebicons"><span class="fontawesome-heart"></span>  add</button>
+        <button class="add" data-type="2" data-collection="<?php echo $iconfont->family; ?>"><span class="fontawesome-heart"></span>  add</button>
       </div>
     </section>
 
@@ -155,40 +88,12 @@
     </section>
   </article>
 
-<!-- typicons -->
-  <article class="typicons" id="typicons" data-high="2" data-text="">
-    <section data-cols="2" class="icon-font--header">
-      <div>
-        <h2>Typicons</h2>
-        <p>All-purpose icons by <a href="http://typicons.com/" target="_blank">Stephen Hutchings</a>.</p>
-      </div>
-      <div>
-        <button class="add" data-type="2" data-collection="typicons"><span class="fontawesome-heart"></span>  add</button>
-      </div>
-    </section>
-    
-    <section data-name="preview" data-cols="1" data-valign="center">
-      <div></div>
-    </section>
-  </article>
-  
-<!-- zocial -->
-  <article class="zocial last" id="zocial" data-high="2" data-text="">
-    <section data-cols="2" class="icon-font--header">
-      <div>
-        <h2>zocial</h2>
-        <p>A huge collection of zocial & brand icons by <a href="http://smcllns.com/" target="_blank">Sam Collins</a>.</p>
-      </div>
-      <div>
-        <button class="add" data-type="2" data-collection="zocial"><span class="fontawesome-heart"></span>  add</button>
-      </div>
-    </section>
-    
-    <section data-name="preview" data-cols="1" data-valign="center">
-      <div></div>
-    </section>
-  </article>
-  
+  <?php endforeach; ?>
+
+
+
+
+   
 <!-- Your Icon Fonts -->
   <article id="output" data-high="5">
     <section data-cols="1">
@@ -357,6 +262,9 @@ Pro tip: Select some icon fonts to the see real output here!
   </script>
 
   <script type="text/javascript">
+
+    window.iconfonts = <?php echo $iconfonts ?>;
+
     // Add a script element as a child of the body
     function downloadJSAtOnload() {
       var element = document.createElement('script');
