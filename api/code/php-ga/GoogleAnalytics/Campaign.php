@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics;
@@ -166,18 +166,18 @@ class Campaign {
 		$this->type = $type;
 		
 		switch($type) {
-			// See http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignManager.as#375
+			// See https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignManager.as#375
 			case self::TYPE_DIRECT:
 				$this->name   = '(direct)';
 				$this->source = '(direct)';
 				$this->medium = '(none)';
 				break;
-			// See http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignManager.as#340
+			// See https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignManager.as#340
 			case self::TYPE_REFERRAL:
 				$this->name   = '(referral)';
 				$this->medium = 'referral';
 				break;
-			// See http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignManager.as#280
+			// See https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignManager.as#280
 			case self::TYPE_ORGANIC:
 				$this->name   = '(organic)';
 				$this->medium = 'organic';
@@ -188,7 +188,7 @@ class Campaign {
 	}
 	
 	/**
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignManager.as#333
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignManager.as#333
 	 * @param string $url
 	 * @return \UnitedPrototype\GoogleAnalytics\Campaign
 	 */
@@ -202,7 +202,7 @@ class Campaign {
 	}
 	
 	/**
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignTracker.as#153
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignTracker.as#153
 	 */
 	public function validate() {
 		// NOTE: gaforflash states that id and gClickId must also be specified,

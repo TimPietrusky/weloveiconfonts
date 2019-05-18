@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics\Internals\Request;
@@ -80,7 +80,7 @@ abstract class Request extends HttpRequest {
 	 * within the "utme" parameter, but we include it here for completeness
 	 * 
 	 * @see ParameterHolder::$__utmv
-	 * @link http://code.google.com/apis/analytics/docs/gaJS/gaJSApiBasicConfiguration.html#_gat.GA_Tracker_._setVar
+	 * @link https://code.google.com/apis/analytics/docs/gaJS/gaJSApiBasicConfiguration.html#_gat.GA_Tracker_._setVar
 	 * @deprecated
 	 * @const string
 	 */
@@ -123,8 +123,8 @@ abstract class Request extends HttpRequest {
 		// Increment session track counter for each request
 		$this->session->increaseTrackCount();
 		
-		// See http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/v4/Configuration.as?r=237#48
-		// and http://code.google.com/intl/de-DE/apis/analytics/docs/tracking/eventTrackerGuide.html#implementationConsiderations
+		// See https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/v4/Configuration.as?r=237#48
+		// and https://code.google.com/intl/de-DE/apis/analytics/docs/tracking/eventTrackerGuide.html#implementationConsiderations
 		if($this->session->getTrackCount() > 500) {
 			Tracker::_raiseError('Google Analytics does not guarantee to process more than 500 requests per session.', __METHOD__);
 		}
@@ -150,7 +150,7 @@ abstract class Request extends HttpRequest {
 		
 		// The "utmip" parameter is only relevant if a mobile analytics
 		// ID (MO-123456-7) was given,
-		// see http://code.google.com/p/php-ga/issues/detail?id=9
+		// see https://code.google.com/p/php-ga/issues/detail?id=9
 		$p->utmip = $this->visitor->getIpAddress();
 		
 		$p->aip = $this->tracker->getConfig()->getAnonymizeIpAddresses() ? 1 : null;
@@ -193,7 +193,7 @@ abstract class Request extends HttpRequest {
 	}
 	
 	/**
-	 * @link http://xahlee.org/js/google_analytics_tracker_2010-07-01_expanded.js line 575
+	 * @link https://xahlee.org/js/google_analytics_tracker_2010-07-01_expanded.js line 575
 	 * @param \UnitedPrototype\GoogleAnalytics\Internals\ParameterHolder $p
 	 * @return \UnitedPrototype\GoogleAnalytics\Internals\ParameterHolder
 	 */
@@ -201,7 +201,7 @@ abstract class Request extends HttpRequest {
 		$customVars = $this->tracker->getCustomVariables();
 		if($customVars) {
 			if(count($customVars) > 5) {
-				// See http://code.google.com/intl/de-DE/apis/analytics/docs/tracking/gaTrackingCustomVariables.html#usage
+				// See https://code.google.com/intl/de-DE/apis/analytics/docs/tracking/gaTrackingCustomVariables.html#usage
 				Tracker::_raiseError('The sum of all custom variables cannot exceed 5 in any given request.', __METHOD__);
 			}
 			
@@ -213,7 +213,7 @@ abstract class Request extends HttpRequest {
 			
 			foreach($customVars as $customVar) {
 				// Name and value get encoded here,
-				// see http://xahlee.org/js/google_analytics_tracker_2010-07-01_expanded.js line 563
+				// see https://xahlee.org/js/google_analytics_tracker_2010-07-01_expanded.js line 563
 				$name  = Util::encodeUriComponent($customVar->getName());
 				$value = Util::encodeUriComponent($customVar->getValue());
 				
@@ -231,7 +231,7 @@ abstract class Request extends HttpRequest {
 	}
 	
 	/**
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/GIFRequest.as#123
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/GIFRequest.as#123
 	 * @param \UnitedPrototype\GoogleAnalytics\Internals\ParameterHolder $p
 	 * @return \UnitedPrototype\GoogleAnalytics\Internals\ParameterHolder
 	 */
@@ -279,7 +279,7 @@ abstract class Request extends HttpRequest {
 			$p->__utmz .= $this->visitor->getVisitCount() . '.';
 			$p->__utmz .= $campaign->getResponseCount() . '.';
 			
-			// See http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignTracker.as#236
+			// See https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/campaign/CampaignTracker.as#236
 			$data = array(
 				'utmcid'   => $campaign->getId(),
 				'utmcsr'   => $campaign->getSource(),
@@ -303,7 +303,7 @@ abstract class Request extends HttpRequest {
 	}
 	
 	/**
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/v4/Tracker.as#585
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/v4/Tracker.as#585
 	 * @return string
 	 */
 	protected function generateDomainHash() {

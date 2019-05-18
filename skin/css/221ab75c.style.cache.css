@@ -7,21 +7,21 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format("woff");
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format("woff");
 }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local("Lato Bold"), local("Lato-Bold"), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format("woff");
+  src: local("Lato Bold"), local("Lato-Bold"), url(https://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format("woff");
 }
 
 @font-face {
   font-family: 'Source Code Pro';
   font-style: normal;
   font-weight: 400;
-  src: local("Source Code Pro"), local("SourceCodePro-Regular"), url(http://themes.googleusercontent.com/static/fonts/sourcecodepro/v3/mrl8jkM18OlOQN8JLgasDxM0YzuT7MdOe03otPbuUS0.woff) format("woff");
+  src: local("Source Code Pro"), local("SourceCodePro-Regular"), url(https://themes.googleusercontent.com/static/fonts/sourcecodepro/v3/mrl8jkM18OlOQN8JLgasDxM0YzuT7MdOe03otPbuUS0.woff) format("woff");
 }
 
 /*
@@ -4769,10 +4769,10 @@ pre code {
  * to help you kick-start any form of web application.
  *
  * Get it here
- * http://github.com/TimPietrusky/crystallo
+ * https://github.com/TimPietrusky/crystallo
  *
  * 2012 - 2013 by Tim Pietrusky
- * http://timpietrusky.com
+ * https://timpietrusky.com
  */
 /*
  * compass

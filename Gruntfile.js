@@ -1,5 +1,5 @@
 /*!
- * http://timpietrusky.com
+ * https://timpietrusky.com
  * @author Tim Pietrusky
  */
 

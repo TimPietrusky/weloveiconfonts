@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics;
@@ -31,7 +31,7 @@ namespace UnitedPrototype\GoogleAnalytics;
 use UnitedPrototype\GoogleAnalytics\Internals\Util;
 
 /**
- * @link http://code.google.com/apis/analytics/docs/tracking/gaTrackingCustomVariables.html
+ * @link https://code.google.com/apis/analytics/docs/tracking/gaTrackingCustomVariables.html
  */
 class CustomVariable {
 	
@@ -45,7 +45,7 @@ class CustomVariable {
 	 * in custom variable names and values properly, so spaces will show up
 	 * as "%20" in the interface etc.
 	 * 
-	 * @link http://www.google.com/support/forum/p/Google%20Analytics/thread?tid=2cdb3ec0be32e078
+	 * @link https://www.google.com/support/forum/p/Google%20Analytics/thread?tid=2cdb3ec0be32e078
 	 * @var string
 	 */
 	protected $name;
@@ -55,7 +55,7 @@ class CustomVariable {
 	 * in custom variable names and values properly, so spaces will show up
 	 * as "%20" in the interface etc.
 	 * 
-	 * @link http://www.google.com/support/forum/p/Google%20Analytics/thread?tid=2cdb3ec0be32e078
+	 * @link https://www.google.com/support/forum/p/Google%20Analytics/thread?tid=2cdb3ec0be32e078
 	 * @var mixed
 	 */
 	protected $value;
@@ -98,10 +98,10 @@ class CustomVariable {
 	public function validate() {
 		// According to the GA documentation, there is a limit to the combined size of
 		// name and value of 64 bytes after URL encoding,
-		// see http://code.google.com/apis/analytics/docs/tracking/gaTrackingCustomVariables.html#varTypes
-		// and http://xahlee.org/js/google_analytics_tracker_2010-07-01_expanded.js line 563
+		// see https://code.google.com/apis/analytics/docs/tracking/gaTrackingCustomVariables.html#varTypes
+		// and https://xahlee.org/js/google_analytics_tracker_2010-07-01_expanded.js line 563
 		// This limit was increased to 128 bytes BEFORE encoding with the 2012-01 release of ga.js however,
-		// see http://code.google.com/apis/analytics/community/gajs_changelog.html
+		// see https://code.google.com/apis/analytics/community/gajs_changelog.html
 		if(strlen($this->name . $this->value) > 128) {
 			Tracker::_raiseError('Custom Variable combined name and value length must not be larger than 128 bytes.', __METHOD__);
 		}
@@ -115,13 +115,13 @@ class CustomVariable {
 	}
 	
 	/**
-	 * @link http://code.google.com/intl/de-DE/apis/analytics/docs/tracking/gaTrackingCustomVariables.html#usage
+	 * @link https://code.google.com/intl/de-DE/apis/analytics/docs/tracking/gaTrackingCustomVariables.html#usage
 	 * @param int $index
 	 */
 	public function setIndex($index) {
 		// Custom Variables are limited to five slots officially, but there seems to be a
 		// trick to allow for more of them which we could investigate at a later time (see
-		// http://analyticsimpact.com/2010/05/24/get-more-than-5-custom-variables-in-google-analytics/)
+		// https://analyticsimpact.com/2010/05/24/get-more-than-5-custom-variables-in-google-analytics/)
 		if($index < 1 || $index > 5) {
 			Tracker::_raiseError('Custom Variable index has to be between 1 and 5.', __METHOD__);
 		}

@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics\Internals\Request;
@@ -33,7 +33,7 @@ use UnitedPrototype\GoogleAnalytics\Config;
 use UnitedPrototype\GoogleAnalytics\Internals\Util;
 
 /**
- * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/GIFRequest.as
+ * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/GIFRequest.as
  */
 abstract class HttpRequest {	
 	
@@ -104,7 +104,7 @@ abstract class HttpRequest {
 		
 		// This constant is supported as the 4th argument of http_build_query()
 		// from PHP 5.3.6 on and will tell it to use rawurlencode() instead of urlencode()
-		// internally, see http://code.google.com/p/php-ga/issues/detail?id=3
+		// internally, see https://code.google.com/p/php-ga/issues/detail?id=3
 		if(defined('PHP_QUERY_RFC3986')) {
 			// http_build_query() does automatically skip all array entries
 			// with null values, exactly what we want here
@@ -134,7 +134,7 @@ abstract class HttpRequest {
 		
 		if($this->xForwardedFor) {
 			// Sadly "X-Fowarded-For" is not supported by GA so far,
-			// see e.g. http://www.google.com/support/forum/p/Google+Analytics/thread?tid=017691c9e71d4b24,
+			// see e.g. https://www.google.com/support/forum/p/Google+Analytics/thread?tid=017691c9e71d4b24,
 			// but we include it nonetheless for the pure sake of correctness (and hope)
 			$r .= 'X-Forwarded-For: ' . str_replace(array("\n", "\r"), '', $this->xForwardedFor) . "\r\n";
 		}
@@ -191,7 +191,7 @@ abstract class HttpRequest {
 			$timeoutUs = ($timeout - $timeoutS) * 100000;
 			stream_set_timeout($socket, $timeoutS, $timeoutUs);
 			
-			// Ensure that the full request is sent (see http://code.google.com/p/php-ga/issues/detail?id=11)
+			// Ensure that the full request is sent (see https://code.google.com/p/php-ga/issues/detail?id=11)
 			$sentData = 0;
 			$toBeSentData = strlen($request);
 			while($sentData < $toBeSentData) {

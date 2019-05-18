@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics\Internals;
@@ -31,7 +31,7 @@ namespace UnitedPrototype\GoogleAnalytics\Internals;
 /**
  * This is nearly a 1:1 PHP port of the gaforflash X10 class code.
  * 
- * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/X10.as
+ * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/X10.as
  */
 class X10 {
 	

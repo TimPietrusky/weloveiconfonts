@@ -35,7 +35,7 @@ class Leet {
 
         if (preg_match('!(beta.weloveiconfonts.com)!', $_SERVER['HTTP_HOST']) == 1) {
             self::$isLive = false;
-            self::$url_api = "http://beta.weloveiconfonts.com/api/fonts/";
+            self::$url_api = "https://beta.weloveiconfonts.com/api/fonts/";
         }
 
         // Set the include path

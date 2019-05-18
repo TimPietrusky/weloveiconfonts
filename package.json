@@ -9,7 +9,7 @@
   "license": "VVL",
   "repository": {
     "type": "git",
-    "url": "http://github.com/TimPietrusky/weloveiconfonts.git"
+    "url": "https://github.com/TimPietrusky/weloveiconfonts.git"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

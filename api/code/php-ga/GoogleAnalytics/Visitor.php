@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics;
@@ -241,7 +241,7 @@ class Visitor {
 	/**
 	 * Generates a hashed value from user-specific properties.
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/v4/Tracker.as#542
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/v4/Tracker.as#542
 	 * @return int
 	 */
 	protected function generateHash() {
@@ -254,12 +254,12 @@ class Visitor {
 	/**
 	 * Generates a unique user ID from the current user-specific properties.
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/v4/Tracker.as#563
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/v4/Tracker.as#563
 	 * @return int
 	 */
 	protected function generateUniqueId() {
 		// There seems to be an error in the gaforflash code, so we take the formula
-		// from http://xahlee.org/js/google_analytics_tracker_2010-07-01_expanded.js line 711
+		// from https://xahlee.org/js/google_analytics_tracker_2010-07-01_expanded.js line 711
 		// instead ("&" instead of "*")
 		return ((Util::generate32bitRandom() ^ $this->generateHash()) & 0x7fffffff);
 	}

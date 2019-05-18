@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics;
@@ -45,7 +45,7 @@ class Tracker {
 	 * ga.js version are implemented but rather that the requests comply
 	 * with these of ga.js.
 	 * 
-	 * @link http://code.google.com/apis/analytics/docs/gaJS/changelog.html
+	 * @link https://code.google.com/apis/analytics/docs/gaJS/changelog.html
 	 * @const string
 	 */
 	const VERSION = '5.2.5'; // As of 25.02.2012
@@ -79,7 +79,7 @@ class Tracker {
 	 * Whether to generate a unique domain hash, default is true to be consistent
 	 * with the GA Javascript Client
 	 * 
-	 * @link http://code.google.com/apis/analytics/docs/tracking/gaTrackingSite.html#setAllowHash
+	 * @link https://code.google.com/apis/analytics/docs/tracking/gaTrackingSite.html#setAllowHash
 	 * @see Internals\Request\Request::generateDomainHash()
 	 * @var bool
 	 */
@@ -171,7 +171,7 @@ class Tracker {
 	/**
 	 * Equivalent of _setCustomVar() in GA Javascript client.
 	 * 
-	 * @link http://code.google.com/apis/analytics/docs/tracking/gaTrackingCustomVariables.html
+	 * @link https://code.google.com/apis/analytics/docs/tracking/gaTrackingCustomVariables.html
 	 * @param \UnitedPrototype\GoogleAnalytics\CustomVariable $customVariable
 	 */
 	public function addCustomVariable(CustomVariable $customVariable) {
@@ -220,7 +220,7 @@ class Tracker {
 	/**
 	 * Equivalent of _trackPageview() in GA Javascript client.
 	 * 
-	 * @link http://code.google.com/apis/analytics/docs/gaJS/gaJSApiBasicConfiguration.html#_gat.GA_Tracker_._trackPageview
+	 * @link https://code.google.com/apis/analytics/docs/gaJS/gaJSApiBasicConfiguration.html#_gat.GA_Tracker_._trackPageview
 	 * @param \UnitedPrototype\GoogleAnalytics\Page $page
 	 * @param \UnitedPrototype\GoogleAnalytics\Session $session
 	 * @param \UnitedPrototype\GoogleAnalytics\Visitor $visitor
@@ -237,7 +237,7 @@ class Tracker {
 	/**
 	 * Equivalent of _trackEvent() in GA Javascript client.
 	 * 
-	 * @link http://code.google.com/apis/analytics/docs/gaJS/gaJSApiEventTracking.html#_gat.GA_EventTracker_._trackEvent
+	 * @link https://code.google.com/apis/analytics/docs/gaJS/gaJSApiEventTracking.html#_gat.GA_EventTracker_._trackEvent
 	 * @param \UnitedPrototype\GoogleAnalytics\Event $event
 	 * @param \UnitedPrototype\GoogleAnalytics\Session $session
 	 * @param \UnitedPrototype\GoogleAnalytics\Visitor $visitor
@@ -259,9 +259,9 @@ class Tracker {
 	 * Although the naming of "_addTrans()" would suggest multiple possible transactions
 	 * per request, there is just one allowed actually.
 	 * 
-	 * @link http://code.google.com/apis/analytics/docs/gaJS/gaJSApiEcommerce.html#_gat.GA_Tracker_._addTrans
-	 * @link http://code.google.com/apis/analytics/docs/gaJS/gaJSApiEcommerce.html#_gat.GA_Tracker_._addItem
-	 * @link http://code.google.com/apis/analytics/docs/gaJS/gaJSApiEcommerce.html#_gat.GA_Tracker_._trackTrans
+	 * @link https://code.google.com/apis/analytics/docs/gaJS/gaJSApiEcommerce.html#_gat.GA_Tracker_._addTrans
+	 * @link https://code.google.com/apis/analytics/docs/gaJS/gaJSApiEcommerce.html#_gat.GA_Tracker_._addItem
+	 * @link https://code.google.com/apis/analytics/docs/gaJS/gaJSApiEcommerce.html#_gat.GA_Tracker_._trackTrans
 	 * 
 	 * @param \UnitedPrototype\GoogleAnalytics\Transaction $transaction
 	 * @param \UnitedPrototype\GoogleAnalytics\Session $session
@@ -279,7 +279,7 @@ class Tracker {
 		$request->fire();
 		
 		// Every item gets a separate request,
-		// see http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/v4/Tracker.as#312
+		// see https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/v4/Tracker.as#312
 		foreach($transaction->getItems() as $item) {
 			// Ensure that all required parameters are set
 			$item->validate();
@@ -296,7 +296,7 @@ class Tracker {
 	/**
 	 * Equivalent of _trackSocial() in GA Javascript client.
 	 * 
-	 * @link http://code.google.com/apis/analytics/docs/tracking/gaTrackingSocial.html#settingUp
+	 * @link https://code.google.com/apis/analytics/docs/tracking/gaTrackingSocial.html#settingUp
 	 * @param \UnitedPrototype\GoogleAnalytics\SocialInteraction $socialInteraction
 	 * @param \UnitedPrototype\GoogleAnalytics\Page $page
 	 * @param \UnitedPrototype\GoogleAnalytics\Session $session
