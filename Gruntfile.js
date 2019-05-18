@@ -112,7 +112,7 @@ module.exports = function (grunt) {
      */
     open: {
       server: {
-        path: 'http://weloveiconfonts.local'
+        path: 'https://weloveiconfonts.local'
       }
     },
 

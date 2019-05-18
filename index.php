@@ -12,8 +12,8 @@
 
   <meta property="og:title" content="We Love Icon Fonts">
   <meta property="og:description" content="A free hosting service like Google Web Fonts, but for Icon Fonts (Open Source). Hurray!">
-  <meta property="og:image" content="http://weloveiconfonts.com/skin/img/weloveiconfonts.jpg">
-  <meta property="og:url" content="http://weloveiconfonts.com">
+  <meta property="og:image" content="https://weloveiconfonts.com/skin/img/weloveiconfonts.jpg">
+  <meta property="og:url" content="https://weloveiconfonts.com">
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="skin/css/4068f63a.style.css?2">
@@ -32,14 +32,6 @@
       </div>
     </section>
   </article>
-
-
-  <article data-text="">
-      <div class="bugindustries">
-        <iframe src="http://s.codepen.io/TimPietrusky/debug/410cc3465a4bea4b6d5a14de695bb7e3" frameborder="0" allowfullscreen=""></iframe>
-      </div>
-  </article>
-
 
 
   <article data-high="1" data-text="">
@@ -144,7 +136,7 @@ Pro tip: Select some icon fonts to the see real output here!
       <div>
         <h3>2. Import the icon fonts(s) into your css and add the font-family('s):</h3>
         <pre data-type="1">
-@import url(<span class="url">http://weloveiconfonts.com/api/?family=zocial</span>);
+@import url(<span class="url">https://weloveiconfonts.com/api/?family=zocial</span>);
 
 <span>/* zocial */</span>
 [class*="zocial-"]:before {
@@ -214,7 +206,7 @@ Pro tip: Select some icon fonts to the see real output here!
         </a>
       </div>
       <div>
-        <a class="hitman__gamma" href="http://twitter.com/share?text=@WeLoveIconFonts+-+A+free+and+open-source+icon+fonts+hosting+service&url=http://weloveiconfonts.com" target="_blank">
+        <a class="hitman__gamma" href="http://twitter.com/share?text=@WeLoveIconFonts+-+A+free+and+open-source+icon+fonts+hosting+service&url=https://weloveiconfonts.com" target="_blank">
           <button data-type="4">
             Spread
             <span class="zocial zocial-twitter"></span>

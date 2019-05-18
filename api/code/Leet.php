@@ -25,12 +25,12 @@ class Leet {
 
     protected static function init() {
         self::$isLive = false;
-        self::$url_api = "http://weloveiconfonts.local/api/fonts/";
+        self::$url_api = "https://weloveiconfonts.local/api/fonts/";
 
         // Local vs production
         if (preg_match('!(weloveiconfonts.com)!', $_SERVER['HTTP_HOST']) == 1) {
             self::$isLive = true;
-            self::$url_api = "http://weloveiconfonts.com/api/fonts/";
+            self::$url_api = "https://weloveiconfonts.com/api/fonts/";
         }
 
         if (preg_match('!(beta.weloveiconfonts.com)!', $_SERVER['HTTP_HOST']) == 1) {

@@ -4,7 +4,7 @@ This is like [Google Web Fonts](http://www.google.com/webfonts), but for Open So
 
 Just choose your favorite Icon Fonts and use them on your website. It's really that simple!
 
-[weloveiconfonts.com](http://weloveiconfonts.com)
+[weloveiconfonts.com](https://weloveiconfonts.com)
 
 
 ## Creating 2.0
