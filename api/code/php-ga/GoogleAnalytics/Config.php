@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics;
@@ -32,7 +32,7 @@ namespace UnitedPrototype\GoogleAnalytics;
  * Note: Doesn't necessarily have to be consistent across requests, as it doesn't
  * alter the actual tracking result.
  * 
- * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/GIFRequest.as
+ * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/GIFRequest.as
  */
 class Config {
 	
@@ -127,7 +127,7 @@ class Config {
 	 * the last IP address block, will be mapped to "aip" parameter
 	 * 
 	 * @see Internals\ParameterHolder::$aip
-	 * @link http://code.google.com/apis/analytics/docs/gaJS/gaJSApi_gat.html#_gat._anonymizeIp
+	 * @link https://code.google.com/apis/analytics/docs/gaJS/gaJSApi_gat.html#_gat._anonymizeIp
 	 * @var bool
 	 */
 	protected $anonymizeIpAddresses = false;
@@ -138,7 +138,7 @@ class Config {
 	 * the Site Speed metrics are derived.
 	 * 
 	 * @see Page::$loadTime
-	 * @link http://code.google.com/apis/analytics/docs/gaJS/gaJSApiBasicConfiguration.html#_gat.GA_Tracker_._setSiteSpeedSampleRate
+	 * @link https://code.google.com/apis/analytics/docs/gaJS/gaJSApiBasicConfiguration.html#_gat.GA_Tracker_._setSiteSpeedSampleRate
 	 * @var int
 	 */
 	protected $sitespeedSampleRate = 1;

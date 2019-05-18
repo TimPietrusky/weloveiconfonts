@@ -19,17 +19,17 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics\Internals;
 
 /**
- * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/Utils.as
+ * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/Utils.as
  */
 class Util {
 	
@@ -52,8 +52,8 @@ class Util {
 	/**
 	 * Here as a separate method so it can also be applied to e.g. a http_build_query() result.
 	 *  
-	 * @link http://stackoverflow.com/questions/1734250/what-is-the-equivalent-of-javascripts-encodeuricomponent-in-php/1734255#1734255
-	 * @link http://devpro.it/examples/php_js_escaping.php
+	 * @link https://stackoverflow.com/questions/1734250/what-is-the-equivalent-of-javascripts-encodeuricomponent-in-php/1734255#1734255
+	 * @link https://devpro.it/examples/php_js_escaping.php
 	 * 
 	 * @param string $encodedValue
 	 * @return string
@@ -65,7 +65,7 @@ class Util {
 	/**
 	 * Generates a 32bit random number.
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/Utils.as#33
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/Utils.as#33
 	 * @return int
 	 */
 	public static function generate32bitRandom() {
@@ -75,7 +75,7 @@ class Util {
 	/**
 	 * Generates a hash for input string.
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/Utils.as#44
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/Utils.as#44
 	 * @param string $string
 	 * @return int
 	 */

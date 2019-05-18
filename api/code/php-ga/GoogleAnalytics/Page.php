@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics;
@@ -56,7 +56,7 @@ class Page {
 	protected $charset;
 	
 	/**
-	 * Referer URL, e.g. "http://www.example.com/path/page.html",  will be
+	 * Referer URL, e.g. "https://www.example.com/path/page.html",  will be
 	 * mapped to "utmr" parameter
 	 * 
 	 * @see Internals\ParameterHolder::$utmr

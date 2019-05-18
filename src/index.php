@@ -12,8 +12,8 @@
 
   <meta property="og:title" content="We Love Icon Fonts">
   <meta property="og:description" content="A free hosting service like Google Web Fonts, but for Icon Fonts (Open Source). Hurray!">
-  <meta property="og:image" content="http://weloveiconfonts.com/skin/img/weloveiconfonts.jpg">
-  <meta property="og:url" content="http://weloveiconfonts.com">
+  <meta property="og:image" content="https://weloveiconfonts.com/skin/img/weloveiconfonts.jpg">
+  <meta property="og:url" content="https://weloveiconfonts.com">
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="skin/css/style.css">
@@ -37,18 +37,18 @@
     <section data-cols="3">
           <div>
             <h3>What?</h3>
-            <p>This is a free & open source <b>icon fonts hosting service</b> (like <a href="http://www.google.com/webfonts" target="_blank">Google Web Fonts</a>, but icon fonts only). Hurray! </p>
+            <p>This is a free & open source <b>icon fonts hosting service</b> (like <a href="https://www.google.com/webfonts" target="_blank">Google Web Fonts</a>, but icon fonts only). Hurray! </p>
           </div>
 
           <div>
             <h3>Caution!</h3>
-            <p>This is a public gamma. Use this service for mockups, reduced test-cases or <a href="http://codepen.io" target="_blank">CodePens</a>, but not on productive systems!</p>
+            <p>This is a public gamma. Use this service for mockups, reduced test-cases or <a href="https://codepen.io" target="_blank">CodePens</a>, but not on productive systems!</p>
           </div>
 
           <div>
             <h3>Feedback!?</h3>
             <p>
-              Send a message to <a href="http://twitter.com/WeLoveIconFonts" target="_blank">@WeLoveIconFonts</a> or create an <a href="https://github.com/TimPietrusky/weloveiconfonts" target="_blank">issue on GitHub</a>. 
+              Send a message to <a href="https://twitter.com/WeLoveIconFonts" target="_blank">@WeLoveIconFonts</a> or create an <a href="https://github.com/TimPietrusky/weloveiconfonts" target="_blank">issue on GitHub</a>. 
             </p>
           </div>
     </section>
@@ -135,7 +135,7 @@ Pro tip: Select some icon fonts to the see real output here!
       <div>
         <h3>2. Import the icon fonts(s) into your css and add the font-family('s):</h3>
         <pre data-type="1">
-@import url(<span class="url">http://weloveiconfonts.com/api/?family=zocial</span>);
+@import url(<span class="url">https://weloveiconfonts.com/api/?family=zocial</span>);
 
 <span>/* zocial */</span>
 [class*="zocial-"]:before {
@@ -205,7 +205,7 @@ Pro tip: Select some icon fonts to the see real output here!
         </a>
       </div>
       <div>
-        <a class="hitman__gamma" href="http://twitter.com/share?text=@WeLoveIconFonts+-+A+free+and+open-source+icon+fonts+hosting+service&url=http://weloveiconfonts.com" target="_blank">
+        <a class="hitman__gamma" href="https://twitter.com/share?text=@WeLoveIconFonts+-+A+free+and+open-source+icon+fonts+hosting+service&url=https://weloveiconfonts.com" target="_blank">
           <button data-type="4">
             Spread
             <span class="zocial zocial-twitter"></span>
@@ -229,7 +229,7 @@ Pro tip: Select some icon fonts to the see real output here!
     <section data-cols="1">
       <div>
         <footer>
-          Handcrafted 2012 - 2013 by <a href="http://twitter.com/TimPietrusky" target="_blank">@TimPietrusky</a> in Frankfurt (Main), Germany.
+          Handcrafted 2012 - 2013 by <a href="https://twitter.com/TimPietrusky" target="_blank">@TimPietrusky</a> in Frankfurt (Main), Germany.
         </footer>
       </div>
     </section>
@@ -241,7 +241,7 @@ Pro tip: Select some icon fonts to the see real output here!
     <section data-cols="3">
       <div class="creator__social">
         <div class="hitman__gamma hitman__delta">
-          <a class="social__twitter" href="http://twitter.com/WeLoveIconFonts" target="_blank"><span class="entypo-twitter"></span></a>
+          <a class="social__twitter" href="https://twitter.com/WeLoveIconFonts" target="_blank"><span class="entypo-twitter"></span></a>
           <a class="social__github" href="https://github.com/TimPietrusky/weloveiconfonts" target="_blank"><span class="entypo-github"></span></a>
         </div>
       </div>

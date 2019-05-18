@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics;

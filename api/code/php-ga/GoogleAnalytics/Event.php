@@ -19,18 +19,18 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics;
 
 /**
- * @link http://code.google.com/apis/analytics/docs/tracking/eventTrackerOverview.html
- * @link http://code.google.com/apis/analytics/docs/gaJS/gaJSApiEventTracking.html
+ * @link https://code.google.com/apis/analytics/docs/tracking/eventTrackerOverview.html
+ * @link https://code.google.com/apis/analytics/docs/gaJS/gaJSApiEventTracking.html
  */
 class Event {	
 	

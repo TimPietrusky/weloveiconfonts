@@ -1,5 +1,5 @@
 /*!
- * http://timpietrusky.com
+ * https://timpietrusky.com
  * @author Tim Pietrusky
  */
 
@@ -112,7 +112,7 @@ module.exports = function (grunt) {
      */
     open: {
       server: {
-        path: 'http://weloveiconfonts.local'
+        path: 'https://weloveiconfonts.local'
       }
     },
 

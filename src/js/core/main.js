@@ -287,8 +287,8 @@
     },
 
     create : function(model) {
-      var url = "@import url(<span class=\"url\">http://weloveiconfonts.com/api/?family=",
-          link = "&lt;link href='http://weloveiconfonts.com/api/?family='",
+      var url = "@import url(<span class=\"url\">https://weloveiconfonts.com/api/?family=",
+          link = "&lt;link href='https://weloveiconfonts.com/api/?family='",
           body = "",
           count = 0,
           count_added = 0;

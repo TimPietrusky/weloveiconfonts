@@ -19,11 +19,11 @@
  * 
  * Google Analytics is a registered trademark of Google Inc.
  * 
- * @link      http://code.google.com/p/php-ga
+ * @link      https://code.google.com/p/php-ga
  * 
- * @license   http://www.gnu.org/licenses/lgpl.html
+ * @license   https://www.gnu.org/licenses/lgpl.html
  * @author    Thomas Bachem <tb@unitedprototype.com>
- * @copyright Copyright (c) 2010 United Prototype GmbH (http://unitedprototype.com)
+ * @copyright Copyright (c) 2010 United Prototype GmbH (https://unitedprototype.com)
  */
 
 namespace UnitedPrototype\GoogleAnalytics\Internals;
@@ -34,7 +34,7 @@ use UnitedPrototype\GoogleAnalytics\Tracker;
  * This simple class is mainly meant to be a well-documented overview of all
  * possible GA tracking parameters.
  * 
- * @link http://code.google.com/apis/analytics/docs/tracking/gaTrackingTroubleshooting.html#gifParameters
+ * @link https://code.google.com/apis/analytics/docs/tracking/gaTrackingTroubleshooting.html#gifParameters
  */
 class ParameterHolder {	
 	
@@ -93,7 +93,7 @@ class ParameterHolder {
 	/**
 	 * Event "non-interaction" parameter. By default, the event hit will impact a visitor's bounce rate.
 	 * By setting this parameter to 1, this event hit will not be used in bounce rate calculations.
-	 * @link http://code.google.com/apis/analytics/docs/gaJS/gaJSApiEventTracking.html
+	 * @link https://code.google.com/apis/analytics/docs/gaJS/gaJSApiEventTracking.html
 	 * @var int
 	 */
 	public $utmni;
@@ -108,7 +108,7 @@ class ParameterHolder {
 	/**
 	 * Used for GA-internal statistical client function usage and error tracking,
 	 * not implemented in php-ga as of now, but here for documentation completeness.
-	 * @link http://glucik.blogspot.com/2011/02/utmu-google-analytics-request-parameter.html
+	 * @link https://glucik.blogspot.com/2011/02/utmu-google-analytics-request-parameter.html
 	 * @var string
 	 */
 	public $utmu;
@@ -135,7 +135,7 @@ class ParameterHolder {
 	public $utmcs = '-';
 	
 	/**
-	 * Referer URL, e.g. "http://www.example.com/path/page.html", "-" as default
+	 * Referer URL, e.g. "https://www.example.com/path/page.html", "-" as default
 	 * or "0" for internal referers
 	 * @var string
 	 */
@@ -148,7 +148,7 @@ class ParameterHolder {
 	 * IP Address of the end user, e.g. "123.123.123.123", found in GA for Mobile examples,
 	 * but sadly seems to be ignored in normal GA use
 	 * 
-	 * @link http://github.com/mptre/php-ga/blob/master/ga.php
+	 * @link https://github.com/mptre/php-ga/blob/master/ga.php
 	 * @var string
 	 */
 	public $utmip;
@@ -200,7 +200,7 @@ class ParameterHolder {
 	 * Format:
 	 * __utma=<domainHash>.<uniqueId>.<firstTime>.<lastTime>.<currentTime>.<sessionCount>
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMA.as
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMA.as
 	 * @var int
 	 */
 	public $__utma;
@@ -211,7 +211,7 @@ class ParameterHolder {
 	/**
 	 * Hit id for revenue per page tracking for AdSense, a random per-session ID
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/DocumentInfo.as#117
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/core/DocumentInfo.as#117
 	 * @var int
 	 */
 	public $utmhid;
@@ -236,7 +236,7 @@ class ParameterHolder {
 	 * Format:
 	 * __utmb=<domainHash>.<trackCount>.<token>.<lastTime>
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMB.as
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMB.as
 	 * @var string
 	 */
 	public $__utmb;
@@ -260,7 +260,7 @@ class ParameterHolder {
 	 * Format:
 	 * __utmc=<domainHash>
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMC.as
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMC.as
 	 * @var string
 	 */
 	public $__utmc;
@@ -444,7 +444,7 @@ class ParameterHolder {
 	 * Format:
 	 * __utmz=<domainHash>.<campaignCreation>.<campaignSessions>.<responseCount>.<campaignTracking>
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMZ.as
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMZ.as
 	 * @var string
 	 */
 	public $__utmz;
@@ -483,7 +483,7 @@ class ParameterHolder {
      * Expiration:
      * 2 years from set/update.
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMX.as
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMX.as
 	 * @var string
 	 */
 	public $__utmx;
@@ -508,7 +508,7 @@ class ParameterHolder {
 	 * Format:
 	 * __utmv=<domainHash>.<value>
 	 * 
-	 * @link http://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMV.as
+	 * @link https://code.google.com/p/gaforflash/source/browse/trunk/src/com/google/analytics/data/UTMV.as
 	 * @deprecated
 	 * @var string
 	 */
